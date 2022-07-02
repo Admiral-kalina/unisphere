@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $blue;
+  width: 95%;
+  margin: 0 auto;
+  nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    a {
+      color: $blue;
+      font-size: 16px;
+      margin-right: 20px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+  }
+
+}
