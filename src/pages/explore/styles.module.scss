@@ -1,3 +1,5 @@
+
+
 .carousel_block {
   height: 80vh;
 }
@@ -25,5 +27,46 @@
   p {
     width: 39%;
     font-size: 16px;
+  }
+}
+
+.carousel_block{
+  position: relative;
+  .carousel_container{
+    top: 30%;
+    position: absolute;
+    right: 20%;
+    width: 400px;
+  }
+
+  .title{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+
+  .subtitle{
+    font-size: 20px;
+  }
+
+  .btnLearnMore{
+    position: relative;
+    background-color: #0057BD;
+    color: #fff;
+    margin: 20px 0 0 0;
+    padding: 8px 40px 8px 10px;
+    border: none;
+    border-radius: 2px;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 14px;
+      right:15px;
+      width: 13px;
+      height: 13px;
+      background-image: url("https://abzagenci.imgix.net/btnArrow/arrow.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }
