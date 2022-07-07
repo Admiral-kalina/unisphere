@@ -1,5 +1,4 @@
 
-
 .carousel_block {
   height: 80vh;
 }
@@ -35,9 +34,10 @@
   .carousel_container{
     top: 30%;
     position: absolute;
-    right: 20%;
-    width: 200px;
-  }
+    left: 65%;
+    transform: translateX(-50%);
+    width: 410px;
+  }sefr
 
   .title{
     font-size: 36px;

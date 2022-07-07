@@ -2,7 +2,11 @@ import React from "react";
 import Carousel from "../../components/Carousel/Carousel";
 import * as styles from "./styles.module.scss"
 import Unisp from "../../assets/Unisp";
-import ExploreInformation from "../../components/UI/ExploreInformation";
+import ExploreInformation from "../../components/Explore/ExploreInformation";
+import ExploreEvents from "../../components/Explore/ExploreEvents";
+import ExploreInvestors from "../../components/Explore/ExploreInvestors";
+import ExploreApplication from "../../components/Explore/ExploreApplication";
+import ExploreContacts from "../../components/Explore/ExploreContacts";
 
 
 const Explore = () => {
@@ -35,6 +39,21 @@ const Explore = () => {
                         title={'ABOUT'}
                         subtitle={'The world without limits. It\'s about the Unisphere. Discover the metaverse identity through Philosophy, Misson, Values and Brand Guidelines.'}
                     />
+                </div>
+                <div>
+                    <ExploreEvents/>
+                </div>
+                <div>
+                    <ExploreInvestors
+                        title={'FOR INVESTORS'}
+                        subtitle={'Here are additional information about the Unisphere and out pitch desk.Join us n investor.'}
+                    />
+                </div>
+                <div>
+                    <ExploreApplication/>
+                </div>
+                <div>
+                    <ExploreContacts/>
                 </div>
             </Carousel>
         </div>

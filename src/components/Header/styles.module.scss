@@ -7,10 +7,12 @@ header {
   color: $blue;
   width: 95%;
   margin: 0 auto;
+
   nav {
     display: flex;
     justify-content: center;
     list-style: none;
+
     a {
       color: $blue;
       font-size: 16px;
@@ -19,80 +21,80 @@ header {
       text-decoration: none;
     }
   }
+}
 
-  .hamburger{
-    position: relative;
-    height: 40px;
-    width: 38px;
-    margin: 0 25px;
-    background-color: $blue;
-    cursor: pointer;
-    border-radius:2px;
-      span{
-        position: absolute;
-        content: '';
-        background-color: #fff;
-        display: block;
-        width: 17px;
-        height: 2px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      :first-child{
-        top: 13px;
-      }
+.hamburgerBlock{
+  position: relative;
+  height: 40px;
+  width: 38px;
+  margin: 0 25px;
+  background-color: $blue;
+  cursor: pointer;
+  border-radius: 2px;
+}
 
-      :nth-child(2){
-        top: 18px;
-      }
-
-      :last-child{
-        top: 24px;
-      }
+.hamburger {
+  span {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    display: block;
+    width: 17px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .hamburgerActive {
-    position: relative;
-    height: 40px;
-    width: 38px;
-    margin: 0 25px;
-    background-color: $blue;
-    cursor: pointer;
-    border-radius:2px;
+  :first-child {
+    top: 13px;
+  }
 
-    span {
-      position: absolute;
-      background-color: #fff;
-      width: 24px;
-      height: 2px;
-      left: 7px;
-      transform: scale(0);
-      transition: all 0.3s;
-      &:first-child {
+  :nth-child(2) {
+    top: 18.5px;
+  }
+
+  :last-child {
+    top: 24px;
+  }
+}
+
+.hamburgerActive {
+  span {
+    position: absolute;
+    background-color: #fff;
+    width: 24px;
+    height: 2px;
+    left: 7px;
+    transform: scale(0);
+    transition: all 0.2s;
+
+    &:first-child {
       top: 19px;
-        transform: rotate(-45deg);
-
-      }
-      &:last-child {
-        top: 20px;
-        transform: rotate(45deg);
-
-      }
+      transform: rotate(-45deg);
     }
-    @media screen and (min-width: 1024px){
-      visibility: hidden;
-    }
-  }
 
-  @media screen and(max-width: 900px) {
-    .navBar{
-      //display: none;
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:last-child {
+      top: 19px;
+      transform: rotate(45deg);
     }
   }
+}
 
+@media  screen and (min-width: 1024px){
+  .hamburgerBlock{
+    display: none;
+  }
+}
 
-
-
+@media  screen and (max-width: 1024px){
+  .navBar{
+    display: none;
+  }
+}
 
   //.burger{
   //  visibility: hidden;
@@ -124,7 +126,7 @@ header {
   //    background-color: red;
   //  }
   //}
-}
+
 
 //
 //.section{
