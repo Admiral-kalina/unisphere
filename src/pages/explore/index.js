@@ -1,63 +1,48 @@
 import React from "react";
 import Carousel from "../../components/Carousel/Carousel";
 import * as styles from "./styles.module.scss"
-import Unisp from "../../assets/Unisp";
-import ExploreInformation from "../../components/Explore/ExploreInformation";
-import ExploreEvents from "../../components/Explore/ExploreEvents";
-import ExploreInvestors from "../../components/Explore/ExploreInvestors";
-import ExploreApplication from "../../components/Explore/ExploreApplication";
-import ExploreContacts from "../../components/Explore/ExploreContacts";
+import SEvents from "../../components/Slides/Events/SEvents";
+import SInvestor from "../../components/Slides/Investor/SInvestor";
+import App from "../../components/Slides/App/App";
+import SContacts from "../../components/Slides/Contacts/SContacts";
+import SMain from "../../components/Slides/Main/SMain";
+import SExplore from "../../components/Slides/Explore/SExplore";
+import STime from "../../components/Slides/Time/STime";
+import SAbout from "../../components/Slides/About/SAbout";
 
 
 const Explore = () => {
     return (
         <div>
             <Carousel>
-                <div>
-                    <div className={styles.carousel_block}>
-                        <div className={styles.start_block}>
-                            <Unisp/>
-                            <h1>Welcome to the real world metaverse</h1>
-                            <p>Unisphere is a metaverse that complements reality. Bring virtual objects to the real world and place them at specific locations. Send 3D objects to each other and interact with them using your smartphone </p>
-                        </div>
-                    </div>
+                <div className={styles.carousel_block}>
+                    <SMain/>
                 </div>
-                <div>
-                    <ExploreInformation
-                    title={'EXPLORE'}
-                    subtitle={'Meet the Unisphere metaverse here. Find out what is how to apply and what to do in it.'}
-                    />
+                <div className={styles.carousel_block}>
+                   <SExplore/>
                 </div>
-                <div>
-                    <ExploreInformation
-                        title={'TIME'}
-                        subtitle={'Every object in the Unisphere has its life Time.It regulates the metaverse ecosystem, so it does not overflow with 3D object'}
-                    />
+                <div className={styles.carousel_block}>
+                    <STime/>
                 </div>
-                <div>
-                    <ExploreInformation
-                        title={'ABOUT'}
-                        subtitle={'The world without limits. It\'s about the Unisphere. Discover the metaverse identity through Philosophy, Misson, Values and Brand Guidelines.'}
-                    />
+                <div className={styles.carousel_block}>
+                    <SAbout/>
                 </div>
-                <div>
-                    <ExploreEvents/>
+                <div className={styles.carousel_block}>
+                    <SEvents/>
                 </div>
-                <div>
-                    <ExploreInvestors
-                        title={'FOR INVESTORS'}
-                        subtitle={'Here are additional information about the Unisphere and out pitch desk.Join us n investor.'}
-                    />
+                <div className={styles.carousel_block}>
+                    <SInvestor/>
                 </div>
-                <div>
-                    <ExploreApplication/>
+                <div className={styles.carousel_block}>
+                    <App/>
                 </div>
-                <div>
-                    <ExploreContacts/>
+                <div className={styles.carousel_block}>
+                    <SContacts/>
                 </div>
             </Carousel>
         </div>
     )
 }
 export default Explore
+
 

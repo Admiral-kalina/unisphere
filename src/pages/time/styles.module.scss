@@ -1,0 +1,314 @@
+@import '../../styles/variables.scss';
+
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.preview {
+  height: 942px;
+  margin: 0 48px;
+
+  .preview__row {
+    margin-top: 20px;
+    background-color: #fff;
+    display: grid;
+    height: 686px;
+    grid-template-columns: 1fr 1fr;
+    z-index: 2;
+  }
+
+  .preview__animations {
+    background-image: url("../../images/Time/Group.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+  }
+
+  .preview__informations {
+    align-self: center;
+    max-width: 540px;
+
+    h2 {
+      font-size: 60px;
+      line-height: 78px;
+      font-weight: 700;
+      font-family: 'Jura', sans-serif;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+
+  .preview__scroll {
+    position: relative;
+    margin: 53px auto 0;
+    max-width: 384px;
+
+    h5 {
+      display: block;
+      position: relative;
+      text-align: center;
+      font-family: 'Jura', sans-serif;
+      line-height: 30px;
+      font-size: 18px;
+      font-weight: 700;
+      color: $blue;
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: -50px;
+        left: 50%;
+        height: 42px;
+        width: 1px;
+        background-image: url("../../images/Time/dashedLine.png");
+        background-repeat: no-repeat;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 84px;
+        width: 1px;
+        background-image: url("../../images/Time/dashedLine.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      display: block;
+      width: 14px;
+      height: 10px;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../../images/Time/ar.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.metaverse {
+  margin: 0 20px;
+}
+
+.metaverse__row{
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "vase space"
+;
+  grid-template-columns: 1fr 1fr;
+
+  h2{
+    margin-bottom: 54px;
+    display: block;
+    grid-area: header;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 3px;
+  }
+  .animation__vase{
+    align-self: center;
+    span{
+      grid-area: vase;
+      margin-left: 94px;
+      display: block;
+      width: 252px;
+      height: 312px;
+      background-image: url("../../images/Time/vase.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    p{
+      position: relative;
+      z-index: 10;
+      max-width: 440px;
+      font-size: 18px;
+      line-height: 36px;
+      text-align: center;
+    }
+  }
+  .animation__space{
+    grid-area: space;
+    align-self: center;
+    justify-self: end;
+    span{
+      text-align: center;
+      display: block;
+      width: 445px;
+      height: 312px;
+      background-image: url("../../images/Time/space.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    p{
+      position: relative;
+      z-index: 10;
+      max-width: 440px;
+      font-size: 18px;
+      line-height: 36px;
+      text-align: center;
+    }
+  }
+}
+
+.app{
+  margin-top: 220px;
+  position: relative;
+  z-index: 1;
+}
+
+.app_row{
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "info phone"
+;
+  grid-template-columns: 1fr 1fr;
+  .app_header {
+    margin-bottom: 240px;
+    position: relative;
+    grid-area: header;
+    justify-self: center;
+
+    .bgLine {
+      z-index: 0;
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1142px;
+      height: 963px;
+      background-image: url("../../images/Time/bgLine.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .app_title {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      font-family: 'Jura', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 3px;
+    }
+
+    .app_subtitle {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 680px;
+      font-size: 18px;
+      line-height: 36px;
+      @media screen and (max-width: 1440.1px) {
+
+        .app_subtitle{
+          display: none;
+        }
+
+      }
+
+    }
+  }
+  .app_info{
+    margin-right: 55px;
+    grid-area: info;
+    justify-self: end;
+    text-align: center;
+    max-width: 540px;
+    h2{
+      font-family: 'Jura', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 3px;
+    }
+    p{
+      text-align: center;
+      max-width: 540px;
+      font-size: 18px;
+      line-height: 36px;
+    }
+
+    a{
+      display: inline-block;
+      padding: 14px;
+      width: 243px;
+      height: 72px;
+      background-color: $blue;
+      border-radius: 15px;
+    }
+    .appleBtn{
+      width: 222px;
+      height: 72px;
+      margin-right: 18px;
+      span{
+        width: 208px;
+        height: 49px;
+        display: inline-block;
+        background-image: url("../../images/Time/appleBtn.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .googleBtn{
+      width: 243px;
+      height: 72px;
+      span{
+        width: 208px;
+        height: 49px;
+        display: inline-block;
+        background-image: url("../../images/Time/googleBtn.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .app_phone{
+    margin-left: 118px;
+    position: relative;
+    grid-area: phone;
+    width: 309px;
+    height: 640px;
+    background-image: url("../../images/Time/Smart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    span{
+      position: absolute;
+      content: '';
+      display: block;
+      bottom: 80px;
+      left: -120px;
+      width: 180px;
+      height: 180px;
+      background-image: url("../../images/Time/n.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+

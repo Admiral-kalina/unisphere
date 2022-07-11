@@ -1,72 +1,10 @@
 
 .carousel_block {
+  position: relative;
   height: 80vh;
+  
 }
-.start_block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
 
- svg {
-   width: 100%;
-   height: 800px;
-   position: absolute;
-   top: -40px;
-   z-index: -1;
- }
-  h1 {
-    padding-top: 250px;
-    font-size: 34px;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-  p {
-    width: 39%;
-    font-size: 16px;
-  }
-}
 
 .carousel_block{
-  position: relative;
-  .carousel_container{
-    top: 30%;
-    position: absolute;
-    left: 65%;
-    transform: translateX(-50%);
-    width: 410px;
-  }sefr
-
-  .title{
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 5px;
-  }
-
-  .subtitle{
-    font-size: 20px;
-  }
-
-  .btnLearnMore{
-    position: relative;
-    background-color: #0057BD;
-    color: #fff;
-    margin: 20px 0 0 0;
-    padding: 8px 40px 8px 10px;
-    border: none;
-    border-radius: 2px;
-    &:after{
-      content: '';
-      position: absolute;
-      top: 14px;
-      right:15px;
-      width: 13px;
-      height: 13px;
-      background-image: url("https://abzagenci.imgix.net/btnArrow/arrow.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
 }
