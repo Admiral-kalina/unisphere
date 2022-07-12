@@ -1,6 +1,8 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
 import Group from "../../images/Time/Group.png"
+import Footer from "../../components/Footer/Footer";
+
 const Time = () => {
     return(
             <div className={styles.content}>
@@ -51,7 +53,7 @@ const Time = () => {
                         </div>
                     </div>
                 </section>
-
+            <Footer/>
             </div>
     )
 }

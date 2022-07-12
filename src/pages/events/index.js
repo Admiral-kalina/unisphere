@@ -1,8 +1,12 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 
 const Events = () => {
     return(
-        <div>Events</div>
+        <div>
+            <div>Events</div>
+            <Footer/>
+        </div>
     )
 }
 export default Events

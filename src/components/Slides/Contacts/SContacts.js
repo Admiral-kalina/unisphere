@@ -22,12 +22,14 @@ const SContacts = () => {
                         <div className={styles.contactsEmail_block}>
                             <EmailBlock/>
                         </div>
-                        <div className={styles.copyright_block}>
-                            <p>AR Generation Sp. z o. o. © 2021 <a className={styles.generalIformation} href="">GDPR General information</a></p>
-                        </div>
-                        <div className={styles.privacy_block}>
-                            <a href="">Privacy policy</a>
-                            <a href="">Terms of use</a>
+                        <div>
+                            <div className={styles.copyright_block}>
+                                <p>AR Generation Sp. z o. o. © 2021 <a className={styles.generalIformation} href="">GDPR General information</a></p>
+                            </div>
+                            <div className={styles.privacy_block}>
+                                <a href="">Privacy policy</a>
+                                <a href="">Terms of use</a>
+                            </div>
                         </div>
                     </div>
                 </div>

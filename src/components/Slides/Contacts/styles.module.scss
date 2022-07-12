@@ -1,15 +1,22 @@
 .contactsSlide_row{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 70vh;
 }
 
 .contactsSlide_information{
+
   align-self: center;
+  justify-self: end;
+  margin-right: 50px;
   max-width: 500px;
 }
 
 .contactsSlide_subscribe{
-
+  margin: 100px 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .subscribe_block{

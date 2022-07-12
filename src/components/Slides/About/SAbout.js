@@ -10,7 +10,7 @@ const SAbout = () => {
             </div>
             <div className={styles.aboutSlide_information}>
                 <h3 className='slider_title'>ABOUT</h3>
-                <p className='slider_subtitle'>The world without limits. It\'s about the Unisphere. Discover the metaverse identity through Philosophy, Misson, Values and Brand Guidelines.</p>
+                <p className='slider_subtitle'>The world without limits. It's about the Unisphere. Discover the metaverse identity through Philosophy, Misson, Values and Brand Guidelines. </p>
                 <SliderMoreBtn>Learn More</SliderMoreBtn>
             </div>
         </section>

@@ -1,10 +1,12 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
+import Footer from "../../components/Footer/Footer";
 
 const About = () => {
     return(
-        <div className={styles.page}>
-
+        <div>
+            <div className={styles.page}></div>
+            <Footer/>
         </div>
     )
 }

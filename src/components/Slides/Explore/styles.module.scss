@@ -1,6 +1,7 @@
 @import '../../../styles/variables.scss';
 
 .exploreSlide_row{
+  margin-top: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -11,8 +12,8 @@
   background-image: url('../../../images/Slide/Explore.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
 }
 
 .exploreSlide_information{

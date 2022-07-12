@@ -1,9 +1,11 @@
 .aboutSlide_row{
+  margin: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .aboutSlide_animation{
+  margin-right: 100px;
   justify-self: end;
   align-self: center;
   background-image: url('../../../images/Slide/About.png');
@@ -14,6 +16,7 @@
 }
 
 .aboutSlide_information{
+  margin-left: 50px;
   align-self: center;
   max-width: 540px;
 }
