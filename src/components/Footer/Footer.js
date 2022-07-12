@@ -9,6 +9,7 @@ import Instagram from '../../images/icons/instagram.png'
 import Subtract from '../../images/icons/subtract.png'
 import SliderMoreBtn from "../UI/SliderMoreBtn";
 import SocialLinks from "../UI/SocialLinks";
+import EmailBlock from "../UI/EmailBlock";
 
 const Footer = () => (
     <footer>
@@ -18,12 +19,8 @@ const Footer = () => (
                    <a className={styles.glyph} href=""></a>
                    <a className={styles.aye} href=""></a>
                </div>
-               <div className={styles.email_block}>
-                   <p>GET THE LATEST NEWS</p>
-                  <div>
-                      <input placeholder='Enter e-mail' type="text"/>
-                      <button></button>
-                  </div>
+               <div className={styles.email_blocks}>
+                   <EmailBlock/>
                </div>
                <div className={styles.links_block}>
                     <SocialLinks/>

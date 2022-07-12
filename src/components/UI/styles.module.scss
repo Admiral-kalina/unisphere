@@ -56,3 +56,40 @@
 
   }
 }
+
+.email_block{
+  grid-area: email;
+  p{
+    font-family: 'Jura', sans-serif;
+    color: $dark-blue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 3px;
+  }
+  div{
+    display: flex;
+  }
+  input{
+    width: 462px;
+    height: 60px;
+    margin-right: 18px;
+    border: none;
+    border-radius: 3px;
+    padding: 0 18px;
+    color: $dark-blue;
+    ::placeholder{
+      color: #9BADC2;
+    }
+  }
+  button{
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 3px;
+    background-color: $blue;
+    background-image: url("../../images/icons/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

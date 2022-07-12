@@ -2,6 +2,7 @@ import React from 'react';
 import * as styles from "./styles.module.scss"
 import SliderMoreBtn from "../../UI/SliderMoreBtn";
 import SocialLinks from "../../UI/SocialLinks";
+import EmailBlock from "../../UI/EmailBlock";
 
 
 const SContacts = () => {
@@ -15,17 +16,11 @@ const SContacts = () => {
                         <SliderMoreBtn>Sent Request</SliderMoreBtn>
                     </div>
                     <div className={styles.contactsSlide_subscribe}>
-                        {/*<div className={styles.linkIcons_block}>*/}
-                        {/*    <a className={styles.glyph} href=""></a>*/}
-                        {/*    <a className={styles.aye} href=""></a>*/}
-                        {/*</div>*/}
-                        <SocialLinks/>
-                        <div className={styles.email_block}>
-                            <p>GET THE LATEST NEWS</p>
-                            <div>
-                                <input placeholder='Enter e-mail' type="text"/>
-                                <button></button>
-                            </div>
+                        <div>
+                            <SocialLinks/>
+                        </div>
+                        <div className={styles.contactsEmail_block}>
+                            <EmailBlock/>
                         </div>
                         <div className={styles.copyright_block}>
                             <p>AR Generation Sp. z o. o. © 2021 <a className={styles.generalIformation} href="">GDPR General information</a></p>

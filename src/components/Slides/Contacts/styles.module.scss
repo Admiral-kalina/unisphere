@@ -12,32 +12,16 @@
 
 }
 
-.socialIcons_block{
+.subscribe_block{
 
-  .facebook{
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    background-image: url("../../../images/icons/facebook.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 18px;
+}
+
+.contactsEmail_block{
+
+  .email_block{
+
   }
-  .instagram{
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    background-image: url("../../../images/icons/instagram.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 18px;
-  }
-  .subtract{
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    background-image: url("../../../images/icons/subtract.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+  input{
+    width: 302px;
   }
 }
