@@ -1,15 +1,19 @@
 import React from 'react';
 import * as styles from "./styles.module.scss"
+import SliderMoreBtn from "../../UI/SliderMoreBtn";
 
 const STime = () => {
     return (
+        <section className={styles.timeSlide_row}>
+            <div className={styles.timeSlide_animation}>
 
-            <div className={styles.carousel_container}>
-                <p className={styles.title}>TIME</p>
-                <p className={styles.subtitles}>Every object in the Unisphere has its life STime.It regulates the metaverse ecosystem, so it does not overflow with 3D object</p>
-                <button className={styles.btnLearnMore}>More</button>
             </div>
-
+            <div className={styles.timeSlide_information}>
+                <p className='slider_title'>TIME</p>
+                <p className='slider_subtitle'>Every object in the Unisphere has its life STime.It regulates the metaverse ecosystem, so it does not overflow with 3D object</p>
+                <SliderMoreBtn>Learn More</SliderMoreBtn>
+            </div>
+        </section>
     );
 };
 

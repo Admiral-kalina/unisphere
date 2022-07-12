@@ -1,17 +1,19 @@
-.carousel_container{
-  top: 30%;
-  position: absolute;
-  left: 65%;
-  transform: translateX(-50%);
-  width: 410px;
+.timeSlide_row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.title{
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 5px;
+.timeSlide_animation{
+  justify-self: end;
+  align-self: center;
+  background-image: url('../../../images/Slide/Time.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 800px;
 }
 
-.subtitle{
-  font-size: 20px;
+.timeSlide_information{
+  align-self: center;
+  max-width: 540px;
 }

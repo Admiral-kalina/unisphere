@@ -78,37 +78,10 @@
 }
 
 
-.socialIcons_block{
+.links_block{
   grid-area: link;
   margin-top: 13px;
   text-align: right;
-  .facebook{
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    background-image: url("../../images/icons/facebook.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 18px;
-  }
-  .instagram{
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    background-image: url("../../images/icons/instagram.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 18px;
-  }
-  .subtract{
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    background-image: url("../../images/icons/subtract.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-  }
 }
 
 .copyright_block{

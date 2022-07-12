@@ -1,20 +1,58 @@
+@import '../../styles/variables.scss';
+
 .btnLearnMore{
+  margin-top: 50px;
+  padding: 13px 65px 14px 36px;
   position: relative;
-  background-color: #0057BD;
+  font-size: 18px;
+  line-height: 33px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: $blue;
+  letter-spacing: 2px;
   color: #fff;
-  margin: 20px 0 0 0;
-  padding: 8px 40px 8px 10px;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   &:after{
     content: '';
     position: absolute;
-    top: 14px;
-    right:15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right:36px;
     width: 13px;
     height: 13px;
     background-image: url("https://abzagenci.imgix.net/btnArrow/arrow.png");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+
+.socialIcons_block{
+
+  .facebook{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background-image: url("../../images/icons/facebook.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 18px;
+  }
+  .instagram{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background-image: url("../../images/icons/instagram.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 18px;
+  }
+  .subtract{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background-image: url("../../images/icons/subtract.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
   }
 }

@@ -7,7 +7,8 @@ import Facebook from '../../images/icons/facebook.png'
 import Glyph from '../../images/icons/glyph.png'
 import Instagram from '../../images/icons/instagram.png'
 import Subtract from '../../images/icons/subtract.png'
-import SliderBtn from "../UI/SliderBtn";
+import SliderMoreBtn from "../UI/SliderMoreBtn";
+import SocialLinks from "../UI/SocialLinks";
 
 const Footer = () => (
     <footer>
@@ -24,10 +25,8 @@ const Footer = () => (
                       <button></button>
                   </div>
                </div>
-               <div className={styles.socialIcons_block}>
-                   <a className={styles.facebook} href=""></a>
-                   <a className={styles.instagram} href=""></a>
-                   <a className={styles.subtract} href=""></a>
+               <div className={styles.links_block}>
+                    <SocialLinks/>
                </div>
                <div className={styles.copyright_block}>
                    <p>AR Generation Sp. z o. o. © 2021 <a className={styles.generalIformation} href="">GDPR General information</a></p>

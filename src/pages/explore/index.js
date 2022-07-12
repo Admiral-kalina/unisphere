@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "../../components/Carousel/Carousel";
-import * as styles from "./styles.module.scss"
+import * as styles from "./style.scss"
+import  "./style.scss"
 import SEvents from "../../components/Slides/Events/SEvents";
 import SInvestor from "../../components/Slides/Investor/SInvestor";
 import App from "../../components/Slides/App/App";
@@ -15,28 +16,28 @@ const Explore = () => {
     return (
         <div>
             <Carousel>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                     <SMain/>
                 </div>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                    <SExplore/>
                 </div>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                     <STime/>
                 </div>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                     <SAbout/>
                 </div>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                     <SEvents/>
                 </div>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                     <SInvestor/>
                 </div>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                     <App/>
                 </div>
-                <div className={styles.carousel_block}>
+                <div className='sliderCarousel_block'>
                     <SContacts/>
                 </div>
             </Carousel>

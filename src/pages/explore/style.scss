@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.sliderCarousel_block{
+  position: relative;
+  height: 80vh;
+}
+
+
+.slider_title{
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: $dark-blue;
+}
+
+.slider_subtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: $dark-blue;
+}
