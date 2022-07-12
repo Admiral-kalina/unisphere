@@ -8,7 +8,7 @@ const ExploreCarousel = ({children}) => {
     const handlePrev = () => setTimeout(() => carousel.current.prev(), 500)
 
     const handleScroll = (e) => {
-        e.deltaY === 53 ? handleNext() : handlePrev()
+        e.deltaY >= 1 ? handleNext() : handlePrev()
     }
 
     useEffect(() => {
