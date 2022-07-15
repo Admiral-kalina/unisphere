@@ -2,6 +2,10 @@ import React from "react";
 import * as styles from "./styles.module.scss";
 import Group from "../../images/Time/Group.png"
 import Footer from "../../components/Footer/Footer";
+import Vase from "../../assets/animateImg/Qube/Vase";
+import Qube from "../../assets/animateImg/Qube/Qube";
+import Space from "../../assets/animateImg/Space/Space";
+import Phone from "../../assets/animateImg/Phone/Phone";
 
 const Time = () => {
     return(
@@ -25,11 +29,11 @@ const Time = () => {
                         <div className={styles.metaverse__row}>
                             <h2>Welcome to the space of new opportunities for life, communication, travel and business.</h2>
                             <div className={styles.animation__vase}>
-                                <span></span>
+                                <Qube/>
                                 <p>Unisphere is the metaverse that augmented the real world. It is based on AR technology and is accessible via your smartphone.</p>
                             </div>
                             <div className={styles.animation__space}>
-                                <span></span>
+                                <Space/>
                                 <p>It’s the first metaverse ecosystem that integrates with different apps. It contributes to the creation of the AR world with unlimited possibilities.</p>
                             </div>
                         </div>
@@ -49,6 +53,7 @@ const Time = () => {
                             <a href='' className={styles.googleBtn}><span></span></a>
                         </div>
                         <div className={styles.app_phone}>
+                            <Phone/>
                             <span></span>
                         </div>
                     </div>

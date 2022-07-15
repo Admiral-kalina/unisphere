@@ -1,0 +1,72 @@
+
+.exploreCube{
+  width: 452px;
+  height: 452px;
+  position: relative;
+  .cubeBg{
+    position: absolute;
+    top: 0;
+  }
+  .rotateTriangle{
+    position: absolute;
+    z-index: 1;
+    transform: scaleX(-1) rotate(-60deg);
+    top: 39px;
+    left: 106px;
+  }
+  .exploreTriangle_container{
+    position: relative;
+    height: 168px;
+    width: 187px;
+    left: 41px;
+
+    .polygon {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(100% 0, 0 92%, 48% 100%);
+    }
+
+    .dashed{
+      position: absolute !important;
+      top: -50px !important;
+      left: -30px !important;
+    }
+  }
+}
+
+.exploreBlueBalloon_container{
+  position: relative;
+  height: 279px;
+  width: 195px;
+  .polygon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 99%, 43% 92%, 36% 86%, 36% 80%, 30% 73%, 16% 65%, 11% 59%, 8% 55%, 5% 50%, 3% 45%, 2% 41%, 0% 38%, 0% 35%, 1% 31%, 2% 27%, 4% 22%, 7% 18%, 11% 15%, 14% 11%, 18% 8%, 24% 5%, 26% 4%, 34% 2%, 38% 1%, 43% 0%, 50% 0%, 57% 0%, 63% 1%, 68% 2%, 73% 4%, 77% 6%, 80% 7%, 84% 10%, 86% 11%, 90% 14%, 92% 16%, 94% 18%, 96% 21%, 98% 24%, 99% 27%, 100% 29%, 100% 30%, 100% 34%, 100% 38%, 99.5% 40%, 98.5% 43%, 97% 47%, 95% 52%, 91% 57%, 87% 62%, 84% 67%, 80% 71%, 77% 75%, 72% 79%, 69% 82%, 67% 84%)
+  }
+  .dashed{
+    position: absolute !important;
+    top: -80px !important;
+  }
+}
+
+.exploreDarkBalloon_container{
+  position: relative;
+  height: 124px;
+  width: 87px;
+  .polygon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path:polygon(50% 99%, 43% 92%, 36% 86%, 30% 80%, 23% 73%, 16% 65%, 11% 59%, 8% 55%, 5% 50%, 3% 45%, 2% 41%, 0% 38%, 0% 35%, 1% 31%, 2% 27%, 4% 22%, 7% 18%, 11% 15%, 14% 11%, 18% 8%, 24% 5%, 26% 4%, 34% 2%, 38% 1%, 43% 0%, 50% 0%, 57% 0%, 63% 1%, 68% 2%, 73% 4%, 77% 6%, 80% 7%, 84% 10%, 86% 11%, 90% 14%, 92% 16%, 94% 18%, 96% 21%, 98% 24%, 99% 27%, 100% 29%, 100% 30%, 100% 34%, 100% 38%, 99.5% 40%, 98.5% 43%, 97% 47%, 95% 52%, 91% 57%, 87% 62%, 84% 67%, 80% 71%, 77% 75%, 72% 79%, 69% 82%, 67% 84%)
+  }
+  .dashed{
+    position: absolute !important;
+    top: -80px !important;
+    left: -40px !important;
+  }
+}

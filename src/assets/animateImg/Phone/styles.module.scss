@@ -1,0 +1,102 @@
+.phone_block{
+  position: relative;
+  height: 640px;
+  width: 309px;
+  left: 50px;
+}
+.container{
+  overflow: hidden;
+  border-radius: 45px;
+}
+.front{
+  position: absolute !important;
+  left: 17.5px !important;
+  top: 15px !important;
+}
+.dashedFon{
+  position: absolute !important;
+  left: -125px !important;
+  top: -125px !important;
+}
+
+.topBlock_container{
+  width: 151px !important;
+  height: 23px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  top: 13.5px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 25px !important;
+  .topBlockItems{
+    position: absolute !important;
+    top: 4px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  .topDashedBlock{
+    position: absolute !important;
+    left: -205px !important;
+    top: -125px !important;
+
+  }
+}
+
+.buttons{
+  position: absolute !important;
+  top: 100px !important;
+  left: -2px !important;
+}
+
+//import React,{useEffect} from "react";
+//
+//import Parallax from 'parallax-js'
+//import * as styles from "./styles.module.scss";
+//import back from  './back.svg'
+//import dashedFon from './blueBg.png'
+//import front from './front.svg'
+//import topBlock from './topBlock.svg'
+//
+//
+//
+//const Phone = () => {
+//                    console.log(styles)
+//                  useEffect(() => {
+//                    const scene = document.getElementById("scene");
+//                    new Parallax(scene);
+//                  });
+//                    return (
+//                    <div className={styles.container}>
+//                  <div id="scene">
+//                  <img className={styles.back}
+//                    data-depth={0}
+//                    src={back}
+//                    alt='text'
+//
+//                />
+//                    <img className={styles.dashedFon}
+//                    data-depth={0.9}
+//                    src={dashedFon}
+//                    alt='pay'
+//
+//                />
+//                    <img className={styles.front}
+//                    data-depth={0}
+//                    src={front}
+//                    alt='astronaut'
+//
+//                />
+//                    <img className={styles.topBlock}
+//                    data-depth={0}
+//                    src={topBlock}
+//                    alt='astronaut'
+//                    style={{top:'100px'}}
+//                  />
+//                  </div>
+//                  </div>
+//                  );
+//                  };
+//
+//export default Phone;
+//
