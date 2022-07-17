@@ -9,14 +9,14 @@ import * as styles from "./styles.module.scss";
 const ExploreHeaderBlueBalloon = () => {
 
     useEffect(() => {
-        const explore_blue_balloon_scene = document.getElementById("explore_blue_balloon_scene");
-        new Parallax(explore_blue_balloon_scene);
+        const time_blue_balloon_scene = document.getElementById("time_blue_balloon_scene");
+        new Parallax(time_blue_balloon_scene);
     });
 
     return (
-        <div className={styles.exploreBlueBalloon_container} >
+        <div className={styles.timeBlueBalloon_container} >
             <img src={blueBalloon} alt=""/>
-            <div id='explore_blue_balloon_scene' className={styles.polygon}>
+            <div id='time_blue_balloon_scene' className={styles.polygon}>
                 <img className={styles.dashed} data-depth={2} src={dashed} alt=""/>
             </div>
         </div>

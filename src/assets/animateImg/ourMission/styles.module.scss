@@ -1,0 +1,115 @@
+.ourMission_container{
+  width: 408px;
+  height: 385px;
+  position: relative;
+
+  .ourMission_puzzleFigure_block{
+    position: absolute;
+    top: 19px;
+    left: 2px;
+    z-index: 4;
+  }
+  .ourMission_star_block{
+    position: absolute;
+    top: 0;
+    left: 122px;
+    z-index: 5;
+  }
+  .ourMission_circle_block{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  .ourMission_darkStar_block{
+    position: absolute;
+    top: 100px;
+    left: 86px;
+    z-index: 5;
+  }
+
+  .ourMission_curvedLine_block{
+    position: absolute;
+    top: 170px;
+    left: 29.9px;
+    z-index: 5;
+  }
+}
+
+.missionStar_block {
+  position: relative;
+
+  .rightStoreStar_container {
+    position: absolute;
+    top: 0;
+    left: 56px;
+    height: 144px;
+    width: 57px;
+    .polygon {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0% 0%, 0% 100%, 2% 98%, 4% 97%, 4% 94%, 5% 89%, 7% 84%, 8% 78%, 10% 73%, 12% 71%, 16% 66%, 19% 64%, 23% 62%, 29% 60%, 36% 58%, 44% 55%, 55% 54%, 61% 53%, 69% 52%, 78% 52%, 83% 51%, 89% 51%, 97% 51%, 100% 50%, 95% 49%, 87% 49%, 81% 48%, 73% 48%, 67% 47%, 59% 47%, 46% 45%, 41% 44%, 33% 42%, 25% 39%, 17% 35%, 13% 32%, 11% 29%, 9% 25%);
+    }
+    .dashed {
+      position: absolute !important;
+      top: -80px !important;
+      left: -30px !important;
+    }
+  }
+}
+
+.darkStar_container {
+  height: 73px;
+  width: 57px;
+
+  .polygon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 1%, 51% 6%, 52% 15%, 53% 20%, 53% 27%, 56% 34%, 58% 37%, 63% 41%, 66% 43%, 70% 45%, 74% 46%, 81% 48%, 89% 49%, 96% 50%, 97% 50%, 93% 51%, 85% 53%, 80% 53%, 74% 55%, 67% 57%, 65% 59%, 61% 61%, 59% 65%, 57% 68%, 55% 71%, 54% 75%, 52% 84%, 50% 99%, 48% 93%, 47% 84%, 46% 75%, 43% 67%, 40% 63%, 36% 60%, 32% 58%, 29% 56%, 24% 54%, 17% 53%, 12% 53%, 6% 52%, 2% 51%, 1% 51%, 4% 50%, 11% 50%, 17% 49%, 22% 48%, 26% 46%, 30% 44%, 35% 42%, 38% 40%, 40% 37%, 42% 34%, 44% 31%, 45% 28%, 46% 18%);
+  }
+  .dashed {
+    position: absolute !important;
+    top: -80px !important;
+    left: -30px !important;
+  }
+}
+
+.ourCircle_container{
+  height: 264px;
+  width: 265px;
+
+  .polygon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(49.6% at 50% 50%);
+  }
+  .dashed {
+    position: absolute !important;
+    top: -50px !important;
+    left: 60px !important;
+  }
+}
+
+.curvedLine_container{
+  height: 152px;
+  width: 281px;
+
+  .polygon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(3% 81%, 3% 73%, 4% 69%, 5% 63%, 6% 59%, 9% 53%, 11% 47%, 13% 41%, 16% 36%, 20% 31%, 23% 26%, 28% 20%, 33% 15%, 37% 12%, 42% 9%, 46% 7%, 50% 6%, 54% 5%, 58% 4%, 61% 4%, 65% 5%, 67% 6%, 70% 7%, 72% 8%, 75% 9%, 78% 11%, 80% 13%, 82% 14%, 84% 16%, 86% 18%, 88% 20%, 89% 21%, 91% 23%, 93% 25%, 93% 29%, 92% 30%, 91.5% 30%, 92% 39%, 93% 42%, 95% 47%, 97% 53%, 97% 57%, 96% 62%, 93% 62%, 81% 43%, 76% 38%, 65% 34%, 54% 31%, 48% 35%, 42% 38%, 33% 49%, 30% 53%, 26% 61%, 24% 65%, 21% 72%, 20% 77%, 18% 83%, 17% 87%, 15% 92%, 13% 95%, 10% 95%, 7% 94%);
+  }
+  .dashed {
+    position: absolute !important;
+    top: -30px !important;
+    left: -40px !important;
+  }
+}

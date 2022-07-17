@@ -6,6 +6,7 @@ import Vase from "../../assets/animateImg/Qube/Vase";
 import Qube from "../../assets/animateImg/Qube/Qube";
 import Space from "../../assets/animateImg/Space/Space";
 import Phone from "../../assets/animateImg/Phone/Phone";
+import TimeHeader from "../../assets/animateImg/TimeHeader/TimeHeader";
 
 const Time = () => {
     return(
@@ -13,6 +14,7 @@ const Time = () => {
                 <section className={styles.preview}>
                     <div className={styles.preview__row}>
                         <div className={styles.preview__animations}>
+                            <TimeHeader/>
                         </div>
                         <div className={styles.preview__informations}>
                             <h2>EXPLORE NEW WORLD</h2>

@@ -7,20 +7,20 @@ import * as styles from "./styles.module.scss";
 
 
 
-const ExploreHeaderCube = () => {
+const TimeHeaderCube = () => {
 
     useEffect(() => {
-        const explore_cube_scene = document.getElementById("explore_cube_scene");
-        new Parallax(explore_cube_scene);
+        const time_cube_scene = document.getElementById("time_cube_scene");
+        new Parallax(time_cube_scene);
     });
 
     return (
-        <div className={styles.exploreCube}>
+        <div className={styles.timeCube}>
             <img className={styles.cubeBg} src={cubeBg} alt=""/>
             <img className={styles.rotateTriangle} src={triangle} alt=""/>
-            <div className={styles.exploreTriangle_container} >
+            <div className={styles.timeTriangle_container} >
                 <img src={triangle} alt=""/>
-                <div id='explore_cube_scene' className={styles.polygon}>
+                <div id='time_cube_scene' className={styles.polygon}>
                     <img className={styles.dashed} data-depth={2} src={dashed} alt=""/>
                 </div>
             </div>
@@ -28,4 +28,4 @@ const ExploreHeaderCube = () => {
       
     );
 };
-export default ExploreHeaderCube;
+export default TimeHeaderCube;
