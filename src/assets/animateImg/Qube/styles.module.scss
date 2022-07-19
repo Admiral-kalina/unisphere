@@ -1,3 +1,24 @@
+.qube_container{
+  position: relative;
+  height: 290px;
+  width: 251px;
+
+  .group_panel{
+    top: 0;
+    position: absolute;
+  }
+  .backSide_component{
+    position: absolute;
+  }
+  .vase_component{
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .vase_container{
   height: 196px;
   width: 103px;
@@ -41,24 +62,3 @@
   }
 }
 
-.qube_container{
-  position: relative;
-  height: 290px;
-  width: 251px;
-
-  .group_panel{
-    top: 0;
-    position: absolute;
-  }
-
-  .backSide_component{
-    position: absolute;
-  }
-  .vase_component{
-    position: absolute;
-    z-index: 5;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}

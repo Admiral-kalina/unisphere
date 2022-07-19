@@ -1,0 +1,100 @@
+@import '../styles/variables.scss';
+
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.preview{
+  height: 942px;
+  margin: 0 48px;
+
+  .preview__row {
+    margin-top: 20px;
+    background-color: #fff;
+    display: grid;
+    height: 686px;
+    grid-template-columns: 1fr 1fr;
+    z-index: 2;
+  }
+
+  .preview__animations {
+
+    width: 100%;
+    position: relative;
+  }
+
+  .preview__informations {
+    align-self: center;
+    max-width: 540px;
+
+    h2 {
+      font-size: 60px;
+      line-height: 78px;
+      font-weight: 700;
+      font-family: 'Jura', sans-serif;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+
+  .preview__scroll {
+    position: relative;
+    margin: 53px auto 0;
+    max-width: 384px;
+
+    h5 {
+      display: block;
+      position: relative;
+      text-align: center;
+      font-family: 'Jura', sans-serif;
+      line-height: 30px;
+      font-size: 18px;
+      font-weight: 700;
+      color: $blue;
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: -50px;
+        left: 50%;
+        height: 42px;
+        width: 1px;
+        background-image: url("../images/Time/dashedLine.png");
+        background-repeat: no-repeat;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 84px;
+        width: 1px;
+        background-image: url("../images/Time/dashedLine.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      display: block;
+      width: 14px;
+      height: 10px;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../images/Time/ar.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

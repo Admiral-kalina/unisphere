@@ -1,5 +1,6 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
+import * as parentStyles from "../styles.module.scss";
 import Group from "../../images/Time/Group.png"
 import Footer from "../../components/Footer/Footer";
 import Vase from "../../assets/animateImg/Qube/Vase";
@@ -10,20 +11,20 @@ import TimeHeader from "../../assets/animateImg/TimeHeader/TimeHeader";
 
 const Time = () => {
     return(
-            <div className={styles.content}>
-                <section className={styles.preview}>
-                    <div className={styles.preview__row}>
-                        <div className={styles.preview__animations}>
+            <div className={parentStyles.content}>
+                <section className={parentStyles.preview}>
+                    <div className={parentStyles.preview__row}>
+                        <div className={parentStyles.preview__animations}>
                             <TimeHeader/>
                         </div>
-                        <div className={styles.preview__informations}>
+                        <div className={parentStyles.preview__informations}>
                             <h2>EXPLORE NEW WORLD</h2>
                             <p>We created the Unisphere metaverse and made it free from the physical reality limits.</p>
                         </div>
                     </div>
-                    <div className={styles.preview__scroll}>
+                    <div className={parentStyles.preview__scroll}>
                         <h5>SCROLL TO EXPLORE</h5>
-                        <p className={styles.arrow}></p>
+                        <p className={parentStyles.arrow}></p>
                     </div>
                 </section>
                 <section className={styles.metaverse}>
