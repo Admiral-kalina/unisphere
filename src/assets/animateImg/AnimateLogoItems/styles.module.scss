@@ -28,10 +28,11 @@
 }
 
 .animateLogo_triangle_container{
-
   height: 100%;
   width: 100%;
   position: relative;
+  clip-path: polygon(53% 3%, 2% 98%, 98% 81%);
+
   img{
     height: 100%;
     width: 100%;
@@ -41,7 +42,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    clip-path: polygon(53% 3%, 2% 98%, 98% 81%);
+
   }
   .dashed {
     height:auto !important;
@@ -57,12 +58,13 @@
   height: 144px;
   width: 116px;
   position: relative;
+  clip-path: polygon(73% 1%, 39% 100%, 99% 81%);
   .polygon {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    clip-path: polygon(73% 1%, 39% 100%, 99% 81%);
+
   }
   .dashed {
     position: absolute !important;
@@ -75,12 +77,14 @@
   height: 83px;
   width: 83px;
   position: relative;
+  clip-path: circle(47.2% at 50% 50%);
+
   .polygon {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    clip-path: circle(47.2% at 50% 50%);
+
   }
   .dashed {
     position: absolute !important;

@@ -6,11 +6,16 @@ import AnimateLogoItems from "../../../assets/animateImg/AnimateLogoItems/Animat
 
 const SMain = () => {
     return (
-        <div className={styles.start_block}>
-            <AnimateLogoWord/>
-            <AnimateLogoItems/>
-            <h1 className='slider_title'>Welcome to the real world metaverse</h1>
-            <p className='slider_subtitle'>Unisphere is a metaverse that complements reality. Bring virtual objects to the real world and place them at specific locations. Send 3D objects to each other and interact with them using your smartphone </p>
+        <div className={styles.start_container}>
+           <div className={styles.logoText_block}>
+               <AnimateLogoWord/>
+               <h1 className='slider_title'>Welcome to the real world metaverse</h1>
+               <p className='slider_subtitle'>Unisphere is a metaverse that complements reality. Bring virtual objects to the real world and place them at specific locations. Send 3D objects to each other and interact with them using your smartphone </p>
+           </div>
+            <div className={styles.logoItems_block}>
+                <AnimateLogoItems/>
+            </div>
+
         </div>
     );
 };

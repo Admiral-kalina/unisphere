@@ -6,7 +6,7 @@ import AnimateLogoItems from "../../assets/animateImg/AnimateLogoItems/AnimateLo
 const Contacts = () => {
     return(
         <div>
-            <AnimateLogoItems/>
+
             <Footer/>
         </div>
     )

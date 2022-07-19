@@ -1,0 +1,67 @@
+
+
+
+
+.sliderPhone_container{
+  position: relative;
+  .phonePanel_block{
+    position: absolute;
+  }
+  .phone_block{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+  }
+  .phoneButtons_block{
+    position: absolute;
+    top: 150px;
+  }
+}
+
+.phonePanel_container{
+  position: relative;
+  height: 577px;
+  width: 234px;
+  .polygon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path:polygon(32% 99.5%, 30% 99%, 27% 98%, 26% 97%, 25% 96%, 8% 15%, 9% 14%, 10% 13%, 11% 12%, 13% 11%, 15% 10%, 18% 9%, 19% 8%, 88% 2%, 99% 5%, 99% 2%, 90% 0%,84% 0%, 15% 6%, 11% 7%, 7% 8%, 5% 9%, 3% 10%, 1% 11%, 0% 13%, 0% 15%, 0% 17%, 16% 94%, 17% 96%, 19% 97%, 18% 97%);
+  }
+  .dashed{
+    position: absolute !important;
+    top: -120px !important;
+    left: -60px !important;
+  }
+}
+
+.phoneButtons_container{
+  position: relative;
+
+  .top_button{
+    position: absolute;
+    width: 22px;
+    left: 1px;
+    height: 66px;
+  }
+  .bottom_button{
+    position: absolute;
+    top: 77px;
+    left: 7px;
+    width: 22px;
+    height: 66px;
+  }
+  .polygon{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(20% 6%, 30% 6%, 40% 7%, 49% 10%, 56% 14%, 75% 94%, 70% 96%, 62% 97%, 50% 98%, 41% 98%, 30% 95%, 25% 93%, 22% 91%, 18% 81%, 14% 60%, 11% 36%, 6% 21%, 6% 15%, 5% 11%, 10% 8%);
+  }
+  .dashed{
+    position: absolute !important;
+    top: -20px !important;
+    left: -20px !important;
+  }
+}
