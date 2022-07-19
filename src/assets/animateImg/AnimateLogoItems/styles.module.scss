@@ -1,18 +1,5 @@
-//return (
-//<div className={styles.logoItems_container}>
-//<div className={styles.logoItems_circle_block}>
-//<AnimateLogoCircle/>
-//</div>
-//<div className={styles.logoItems_rhombus_block}>
-//<AnimateLogoRhombus/>
-//</div>
-//<div className={styles.logoItems_triangle_block}>
-//<AnimateLogoTriangle/>
-//</div>
-//</div>
-//);
-
 .logoItems_container{
+
   position: relative;
   width: 500px;
   height: 757px;
@@ -23,11 +10,17 @@
     bottom: 0;
   }
   .logoItems_rhombus_block{
+
+
     position: absolute;
     top: 0;
     right: 125px;
   }
   .logoItems_triangle_block{
+    height: 51px;
+    width: 61px;
+
+    -webkit-backface-visibility: hidden;
     position: absolute;
     top: 118px;
     right: 0;
@@ -35,9 +28,14 @@
 }
 
 .animateLogo_triangle_container{
-  height: 61px;
-  width: 81px;
+
+  height: 100%;
+  width: 100%;
   position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+  }
   .polygon {
     position: absolute;
     top: 0;
@@ -46,9 +44,12 @@
     clip-path: polygon(53% 3%, 2% 98%, 98% 81%);
   }
   .dashed {
+    height:auto !important;
+    width:auto !important;
     position: absolute !important;
     top: -30px !important;
-    left: -40px !important;
+    left: -30px !important;
+
   }
 }
 

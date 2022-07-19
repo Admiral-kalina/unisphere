@@ -10,12 +10,14 @@ const AnimateLogoCircle = () => {
         new Parallax(animate_logo_circle_scene);
     });
     return (
-        <div className={styles.animateLogo_circle_container} >
-            <img src={circle} alt=""/>
-            <div id='animate_logo_circle_scene' className={styles.polygon}>
-                <img className={styles.dashed} data-depth={2} src={dashed} alt=""/>
-            </div>
-        </div>
+        <div>
+            <div id='animate_logo_circle_scene'  className={styles.animateLogo_circle_container} >
+                <img data-depth={2} src={circle} alt=""/>
+                <div data-depth={3} className={styles.polygon}>
+                    <img className={styles.dashed}  src={dashed} alt=""/>
+                </div>
+            </div></div>
+
     );
 };
 
