@@ -32,7 +32,8 @@ const About = () => {
             <section className={styles.ourInformation}>
                 <div className={styles.ourInformation_row}>
                     <div className={styles.ourInformation_philosophy}>
-
+                        <p className={styles.ourInformation_title}>Our philosophy</p>
+                        <p className={styles.ourInformation_subtitle}>Our philosophy is to support people's freedom aspirations in any manifestation.</p>
                     </div>
                     <div className={styles.ourInformation_philosophy__animation}>
                         <Birds/>
@@ -41,10 +42,12 @@ const About = () => {
                         <OurMission/>
                     </div>
                     <div className={styles.ourInformation_mission}>
-
+                        <p className={styles.ourInformation_title}>Our mission </p>
+                        <p className={styles.ourInformation_subtitle}>Our mission is to create a free space without borders and regulations of the physical world.</p>
                     </div>
                     <div className={styles.ourInformation_metahumans}>
-
+                        <p className={styles.ourInformation_title}>metahumans</p>
+                        <p className={styles.ourInformation_subtitle}>The Unisphere residents are called metahumans. These are people who feel free and strive to remove the limitations that exist in physical reality</p>
                     </div>
                     <div className={styles.ourInformation_metahumans__animation}>
                         <Man/>
