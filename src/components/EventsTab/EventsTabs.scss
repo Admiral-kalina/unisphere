@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.ant-tabs-nav-wrap {
+  justify-content: flex-end !important;
+}
+.ant-tabs-nav {
+  width: 70%;
+}
+.ant-tabs-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 15px;
+  svg{
+    path {
+      fill: $blue;
+    }
+  }
+}
+.ant-tabs-tab-active {
+  background-color: $blue !important;
+  svg{
+    path {
+      fill: #fff;
+    }
+  }
+}
+.ant-tabs-tab {
+  width: 5px;
+  border: none !important;}
+
+.ant-tabs-nav-list {
+  padding: 5px;
+  background-color: #ffffff;
+}

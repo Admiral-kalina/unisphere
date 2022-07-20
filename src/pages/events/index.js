@@ -1,10 +1,11 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
+import EventsTab from "../../components/EventsTab/EventsTabs";
 
 const Events = () => {
     return(
         <div>
-            <div>Events</div>
+            <EventsTab></EventsTab>
             <Footer/>
         </div>
     )

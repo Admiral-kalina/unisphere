@@ -14,7 +14,6 @@ const SExplore = () => {
                 <p className='slider_subtitle'>Meet the Unisphere metaverse here. Find out what is how to apply and what to do in it.</p>
                 <SliderMoreBtn >Learn More</SliderMoreBtn>
                 <Cube/>
-
             </div>
         </section>
     );

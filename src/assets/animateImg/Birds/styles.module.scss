@@ -4,7 +4,15 @@
   position: relative;
   height: 385px;
   width: 420px;
-
+  animation: pulse 3s infinite linear;
+  @keyframes pulse {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
   .fonBg_bird_block{
     position: absolute;
     height: 349px;

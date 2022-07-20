@@ -1,8 +1,8 @@
 .logoItems_container{
-
-  position: relative;
-  width: 500px;
-  height: 757px;
+  position: absolute;
+  width: 80vw;
+  height: 50vh;
+  top: -200px;
 
   .logoItems_circle_block{
     position: absolute;
@@ -10,8 +10,6 @@
     bottom: 0;
   }
   .logoItems_rhombus_block{
-
-
     position: absolute;
     top: 0;
     right: 125px;
@@ -55,8 +53,8 @@
 }
 
 .animateLogo_rhombus_container{
-  height: 144px;
-  width: 116px;
+  height: 100%;
+  width: 100%;
   position: relative;
   clip-path: polygon(73% 1%, 39% 100%, 99% 81%);
   .polygon {
@@ -74,8 +72,8 @@
 }
 
 .animateLogo_circle_container{
-  height: 83px;
-  width: 83px;
+  height: 100%;
+  width: 100%;
   position: relative;
   clip-path: circle(47.2% at 50% 50%);
 
