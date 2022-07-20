@@ -7,3 +7,92 @@
 .subtitle{
 
 }
+
+//<section className={styles.ourInformation}>
+//<div className={styles.ourInformation_row}>
+//<div className={styles.ourInformation_philosophy}>
+//<p className={styles.ourInformation_title}>Our philosophy</p>
+//<p className={styles.ourInformation_subtitle}>Our philosophy is to support people's freedom aspirations in any manifestation.</p>
+//</div>
+//<div className={styles.ourInformation_philosophy__animation}>
+//<Birds/>
+//</div>
+//<div className={styles.ourInformation_mission__animation}>
+//<OurMission/>
+//</div>
+//<div className={styles.ourInformation_mission}>
+//<p className={styles.ourInformation_title}>Our mission </p>
+//<p className={styles.ourInformation_subtitle}>Our mission is to create a free space without borders and regulations of the physical world.</p>
+//</div>
+//<div className={styles.ourInformation_metahumans}>
+//<p className={styles.ourInformation_title}>metahumans</p>
+//<p className={styles.ourInformation_subtitle}>The Unisphere residents are called metahumans. These are people who feel free and strive to remove the limitations that exist in physical reality</p>
+//</div>
+//<div className={styles.ourInformation_metahumans__animation}>
+//<Man/>
+//</div>
+//</div>
+//</section>
+
+.ourInformation{
+
+  .ourInformation_title{
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+  .ourInformation_subtitle{
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+}
+
+.ourInformation_row{
+  display: grid;
+  grid-template-areas:
+  "philosophy philosophyAnimation"
+  "missionAnimation mission"
+  "metahumans metahumansAnimation"
+;
+  row-gap: 144px;
+
+  .ourInformation_philosophy{
+  grid-area: philosophy;
+    justify-self: end;
+    align-self: center;
+    max-width: 540px;
+    margin-right: 31px;
+  }
+  .ourInformation_philosophy__animation{
+    grid-area: philosophyAnimation;
+    justify-self: start;
+    margin-left: 170px;
+  }
+  .ourInformation_mission__animation{
+    grid-area: missionAnimation;
+    justify-self: end;
+    margin-right: 161px;
+  }
+  .ourInformation_mission{
+    grid-area: mission;
+    justify-self: start;
+    align-self: center;
+    max-width: 540px;
+    margin-left: 31px;
+  }
+  .ourInformation_metahumans{
+    grid-area: metahumans;
+    justify-self: end;
+    align-self: center;
+    max-width: 540px;
+    margin-right: 31px;
+  }
+  .ourInformation_metahumans__animation{
+    grid-area: metahumansAnimation;
+    justify-self: start;
+    margin-left: 66px;
+  }
+}
