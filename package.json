@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "antd": "^4.21.5",
+    "bootstrap": "^5.2.0",
     "gatsby": "^4.17.2",
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.17.0",
@@ -23,10 +24,12 @@
     "parallax-js": "^3.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "sass": "^1.53.0",
-    "sharp": "^0.30.7"
+    "sharp": "^0.30.7",
+    "swiper": "^8.3.1"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
