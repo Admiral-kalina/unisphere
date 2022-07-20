@@ -1,5 +1,9 @@
 @import '../styles/variables.scss';
 
+.bigContainer{
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .container{
   max-width: 1180px;
   margin: 0 auto;
@@ -21,7 +25,6 @@
   }
 
   .preview__animations {
-
     width: 100%;
     position: relative;
   }
@@ -69,9 +72,9 @@
         background-image: url("../images/Time/dashedLine.png");
         background-repeat: no-repeat;
       }
+    }
 
-      &:after {
-        content: '';
+    span{
         position: absolute;
         display: block;
         bottom: -130px;
@@ -81,9 +84,7 @@
         width: 1px;
         background-image: url("../images/Time/dashedLine.png");
         background-repeat: no-repeat;
-      }
     }
-
     .arrow {
       position: absolute;
       display: block;

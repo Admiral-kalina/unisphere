@@ -11,11 +11,12 @@
   "vase space"
 ;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 135px;
 
   h2{
+    grid-area: header;
     margin-bottom: 54px;
     display: block;
-    grid-area: header;
     text-align: center;
     font-family: 'Jura', sans-serif;
     text-transform: uppercase;
@@ -25,16 +26,13 @@
     letter-spacing: 3px;
   }
   .animation__vase{
-    align-self: center;
-    span{
-      grid-area: vase;
-      margin-left: 94px;
-      display: block;
-      width: 252px;
-      height: 312px;
-      background-image: url("../../images/Time/vase.png");
-      background-size: contain;
-      background-repeat: no-repeat;
+    grid-area: vase;
+    justify-self: end;
+    align-self: end;
+    .animation_vase__block{
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
     }
     p{
       position: relative;
@@ -48,16 +46,8 @@
   .animation__space{
     grid-area: space;
     align-self: center;
-    justify-self: end;
-    span{
-      text-align: center;
-      display: block;
-      width: 445px;
-      height: 312px;
-      background-image: url("../../images/Time/space.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    justify-self: start;
+
     p{
       position: relative;
       z-index: 10;
@@ -83,9 +73,9 @@
 ;
   grid-template-columns: 1fr 1fr;
   .app_header {
+    grid-area: header;
     margin-bottom: 240px;
     position: relative;
-    grid-area: header;
     justify-self: center;
 
     .bgLine {
@@ -123,13 +113,10 @@
       font-size: 18px;
       line-height: 36px;
       @media screen and (max-width: 1440.1px) {
-
         .app_subtitle{
           display: none;
         }
-
       }
-
     }
   }
   .app_info{
@@ -188,14 +175,14 @@
     }
   }
   .app_phone{
-    margin-left: 118px;
-    position: relative;
-    grid-area: phone;
-    width: 309px;
-    height: 640px;
-    background-image: url("../../images/Time/Smart.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    //margin-left: 118px;
+    //position: relative;
+    //grid-area: phone;
+    //width: 309px;
+    //height: 640px;
+    //background-image: url("../../images/Time/Smart.png");
+    //background-size: contain;
+    //background-repeat: no-repeat;
     span{
       position: absolute;
       content: '';

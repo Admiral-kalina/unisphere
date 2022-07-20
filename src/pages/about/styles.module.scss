@@ -1,41 +1,9 @@
 @import '../../styles/variables.scss';
 
-.title{
 
-}
-
-.subtitle{
-
-}
-
-//<section className={styles.ourInformation}>
-//<div className={styles.ourInformation_row}>
-//<div className={styles.ourInformation_philosophy}>
-//<p className={styles.ourInformation_title}>Our philosophy</p>
-//<p className={styles.ourInformation_subtitle}>Our philosophy is to support people's freedom aspirations in any manifestation.</p>
-//</div>
-//<div className={styles.ourInformation_philosophy__animation}>
-//<Birds/>
-//</div>
-//<div className={styles.ourInformation_mission__animation}>
-//<OurMission/>
-//</div>
-//<div className={styles.ourInformation_mission}>
-//<p className={styles.ourInformation_title}>Our mission </p>
-//<p className={styles.ourInformation_subtitle}>Our mission is to create a free space without borders and regulations of the physical world.</p>
-//</div>
-//<div className={styles.ourInformation_metahumans}>
-//<p className={styles.ourInformation_title}>metahumans</p>
-//<p className={styles.ourInformation_subtitle}>The Unisphere residents are called metahumans. These are people who feel free and strive to remove the limitations that exist in physical reality</p>
-//</div>
-//<div className={styles.ourInformation_metahumans__animation}>
-//<Man/>
-//</div>
-//</div>
-//</section>
 
 .ourInformation{
-
+  position: relative;
   .ourInformation_title{
     font-family: 'Jura', sans-serif;
     text-transform: uppercase;
@@ -48,9 +16,20 @@
     line-height: 36px;
     font-weight: 400;
   }
+
+}
+
+.ourInformation_lineBg{
+  position: absolute;
+  z-index: 0;
+  top: -116px;
+  left: 50%;
+  transform: translate(-50.5%);
 }
 
 .ourInformation_row{
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-areas:
   "philosophy philosophyAnimation"
@@ -58,6 +37,7 @@
   "metahumans metahumansAnimation"
 ;
   row-gap: 144px;
+  margin-bottom: 144px;
 
   .ourInformation_philosophy{
   grid-area: philosophy;
@@ -96,3 +76,104 @@
     margin-left: 66px;
   }
 }
+
+
+
+
+.ourValues{
+
+  .ourValues_title{
+
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+  .ourValues_block{
+    margin: 0 48px;
+    position: relative;
+    padding-top: 150px;
+    overflow: hidden;
+    background-color: #ECF2FA;
+    .ourValues_triangle{
+      position: absolute;
+      top: 245px;
+      left: 94px;
+    }
+    .ourValues_rhombus{
+      position: absolute;
+      bottom: 60px;
+      right: -40px;
+    }
+    .ourValues_row{
+      display: grid;
+      width: 1033px;
+      margin: 85px auto 120px;
+      grid-template-columns: 1fr 1fr;
+      justify-self: center;
+      align-self: center;
+      grid-column-gap: 66px;
+      grid-row-gap: 30px;
+    }
+    .ourValues_column{
+
+      display: flex;
+      .ourValues_column__text{
+
+        :first-child{
+          width: 100%;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          font-family: 'Jura', sans-serif;
+        }
+        :last-child{
+          width: 432px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+      img{
+        margin-top: 9px;
+        height: 72px;
+        width: 72px;
+        margin-right: 36px;
+      }
+    }
+  }
+}
+
+.personality{
+  margin: 130px 0 87px 0;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  .personality_title{
+    margin-bottom: 45px;
+    line-height: 33px;
+    font-weight: 600;
+  }
+  .personality_wideText{
+    font-family: 'Jura', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+
+  }
+  .personality_moreText{
+    line-height: 36px;
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+
+//<section className={styles.personality}>
+//<p className={styles.personality_title}>The Unisphere personality is:</p>
+//<p className={styles.personality_wideText}>Freedom Independence ◌ Intelligence ◌ Sociability ◌ Digitality Globality</p>
+//<p className={styles.personality_moreText}>Learn more about Unisphere in our <a href="">Brand Guidlines</a>.</p>
+//</section>

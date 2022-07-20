@@ -1,9 +1,7 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
 import * as parentStyles from "../styles.module.scss";
-import Group from "../../images/Time/Group.png"
 import Footer from "../../components/Footer/Footer";
-import Vase from "../../assets/animateImg/Qube/Vase";
 import Qube from "../../assets/animateImg/Qube/Qube";
 import Space from "../../assets/animateImg/Space/Space";
 import Phone from "../../assets/animateImg/Phone/Phone";
@@ -25,6 +23,7 @@ const Time = () => {
                     <div className={parentStyles.preview__scroll}>
                         <h5>SCROLL TO EXPLORE</h5>
                         <p className={parentStyles.arrow}></p>
+                        <span></span>
                     </div>
                 </section>
                 <section className={styles.metaverse}>
@@ -32,11 +31,15 @@ const Time = () => {
                         <div className={styles.metaverse__row}>
                             <h2>Welcome to the space of new opportunities for life, communication, travel and business.</h2>
                             <div className={styles.animation__vase}>
-                                <Qube/>
+                                <div className={styles.animation_vase__block}>
+                                    <Qube/>
+                                </div>
                                 <p>Unisphere is the metaverse that augmented the real world. It is based on AR technology and is accessible via your smartphone.</p>
                             </div>
                             <div className={styles.animation__space}>
-                                <Space/>
+                                <div>
+                                    <Space/>
+                                </div>
                                 <p>It’s the first metaverse ecosystem that integrates with different apps. It contributes to the creation of the AR world with unlimited possibilities.</p>
                             </div>
                         </div>
