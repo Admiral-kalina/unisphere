@@ -8,6 +8,7 @@ import Qube from "../../assets/animateImg/Qube/Qube";
 import Space from "../../assets/animateImg/Space/Space";
 import Phone from "../../assets/animateImg/Phone/Phone";
 import TimeHeader from "../../assets/animateImg/TimeHeader/TimeHeader";
+import Accordion from "../../components/Accordion/Accordion";
 
 const Time = () => {
     return(
@@ -62,6 +63,7 @@ const Time = () => {
                     </div>
 
                 </section>
+                <Accordion/>
             <Footer/>
             </div>
     )
