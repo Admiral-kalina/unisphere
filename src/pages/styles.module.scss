@@ -2,11 +2,18 @@
 html, body {
   overflow-x: hidden;
 }
+
+.bigContainer{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .container{
   max-width: 1180px;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 
 .preview{
@@ -71,19 +78,18 @@ html, body {
         background-image: url("../images/Time/dashedLine.png");
         background-repeat: no-repeat;
       }
+    }
 
-      &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        bottom: -130px;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 84px;
-        width: 1px;
-        background-image: url("../images/Time/dashedLine.png");
-        background-repeat: no-repeat;
-      }
+    span{
+      position: absolute;
+      display: block;
+      bottom: -130px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 84px;
+      width: 1px;
+      background-image: url("../images/Time/dashedLine.png");
+      background-repeat: no-repeat;
     }
 
     .arrow {

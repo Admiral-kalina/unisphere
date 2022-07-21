@@ -39,7 +39,6 @@ const About = () => {
                     <div className={parentStyles.preview__scroll}>
                         <h5>SCROLL TO EXPLORE</h5>
                         <p className={parentStyles.arrow}></p>
-
                     </div>
                 </div>
             </section>

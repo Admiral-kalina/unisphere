@@ -18,10 +18,16 @@ const Accordion = () => (
                     We do everything to make your life better and easier with AR technologies. Now New Layer is available only on the iOS platform.
                 </p>
             </Panel>
-            <Panel header="This is panel header 2" key="2">
+            <Panel header="What can I do with the New Layer?" key="2">
                 <p>{text}</p>
             </Panel>
-            <Panel header="This is panel header 3" key="3">
+            <Panel header="Usage ideas" key="3">
+                <p>{text}</p>
+            </Panel>
+            <Panel header="Public objects lifetime" key="4">
+                <p>{text}</p>
+            </Panel>
+            <Panel header="Usage Join the team" key="5">
                 <p>{text}</p>
             </Panel>
         </Collapse>

@@ -11,6 +11,7 @@
   "vase space"
 ;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 254px;
 
   h2{
     margin-bottom: 54px;
@@ -25,18 +26,15 @@
     letter-spacing: 3px;
   }
   .animation__vase{
+    grid-area: vase;
+    justify-self: end;
     align-self: center;
-    span{
-      grid-area: vase;
-      margin-left: 94px;
-      display: block;
-      width: 252px;
-      height: 312px;
-      background-image: url("../../images/Time/vase.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     p{
+      margin-top: 25px;
       position: relative;
       z-index: 10;
       max-width: 440px;
@@ -48,16 +46,10 @@
   .animation__space{
     grid-area: space;
     align-self: center;
-    justify-self: end;
-    span{
-      text-align: center;
-      display: block;
-      width: 445px;
-      height: 312px;
-      background-image: url("../../images/Time/space.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     p{
       position: relative;
       z-index: 10;
@@ -136,6 +128,7 @@
     margin-right: 55px;
     grid-area: info;
     justify-self: end;
+    align-self: center;
     text-align: center;
     max-width: 540px;
     h2{
@@ -198,7 +191,7 @@
       content: '';
       display: block;
       bottom: 80px;
-      left: -120px;
+      left: -70px;
       width: 180px;
       height: 180px;
       background-image: url("../../images/Time/n.png");
