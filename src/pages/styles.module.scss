@@ -1,5 +1,7 @@
 @import '../styles/variables.scss';
-
+html, body {
+  overflow-x: hidden;
+}
 .container{
   max-width: 1180px;
   margin: 0 auto;

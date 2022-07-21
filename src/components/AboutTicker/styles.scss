@@ -1,5 +1,7 @@
 .ticker{
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
 }
 
 .ticker__element{
@@ -7,5 +9,5 @@
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-
+  text-transform: uppercase;
 }

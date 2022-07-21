@@ -31,7 +31,7 @@
   .event_text_container {
     background-color: #ffffff;
     padding: 20px 20px;
-    width: 70%;
+    width: 85%;
     transform: translateY(-30px);
   }
 
@@ -44,7 +44,7 @@
   .event_item_title {
     font-size: 24px;
     text-transform: uppercase;
-    width: 80%;
+    width: 90%;
     font-weight: bold;
     color: $dark-blue;
   }
@@ -70,8 +70,9 @@
     margin: 0 auto;
     align-items: center;
     .event_item_place_container {
-      left: 5%;
-      font-size: 14px;
+      text-transform: none;
+      left: 2%;
+      font-size: 12px;
     }
     .event_text_container {
       transform: translate(-5%, -20%);
@@ -79,10 +80,10 @@
     }
   }
   .event_item_date {
-    font-size: 16px;
+    font-size: 14px;
   }
   .event_item_title {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -94,6 +95,10 @@
     }
     .event_item_title {
       width: 100%;
+    }
+    .event_item_img {
+
+      max-height: 3440px;
     }
 
   }

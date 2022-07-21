@@ -8,8 +8,7 @@ const AboutTicker = () => {
         <Ticker>
             {() => (
                 <>
-
-                    <p> Freedom Independence ◌ Intelligence ◌ Sociability ◌ Digitality Globalityindex ◌<br/> </p>
+                    <h2 className={'ticker__element'}> ◌ Freedom Independence ◌ Intelligence ◌ Sociability ◌ Digitality Globalityindex  </h2>
                 </>
             )}
         </Ticker>
