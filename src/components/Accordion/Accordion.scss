@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.accordion_container{
+  position: relative;
+  width: 100%;
+  &::after{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    height: calc(100% - 60px);
+    width: 3px;
+    top: 48px;
+    right: 35px;
+    //border: 1px dashed $blue;
+
+
+    background-image: linear-gradient($blue 33%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 3px 6px;
+    background-repeat: repeat-y;
+  }
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+  background-image: url('../../images/Time/icon/show.png');
+  position: absolute;
+  z-index: 1;
+  height: 48px;
+  width: 48px;
+
+  right: 0;
+  svg{
+    display: none;
+  }
+
+}
+
+.ant-collapse > .ant-collapse-item-active > .ant-collapse-header .ant-collapse-arrow{
+  position: absolute;
+  z-index: 1;
+  background-image: url('../../images/Time/icon/hide.png');
+  height: 48px;
+  width: 48px;
+  svg{
+  display: none;
+  }
+
+}
+
+.ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+  width: 940px;
+  position: relative;
+}
+
+.ant-collapse-header-text{
+  font-size: 36px;
+  line-height: 42px;
+}

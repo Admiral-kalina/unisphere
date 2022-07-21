@@ -1,27 +1,41 @@
 @import '../../styles/variables.scss';
 
-.container{
+.container {
   max-width: 2016px;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   color: $mid-gray;
 }
 
-.row{
+.row {
   display: grid;
   margin: 51px 48px;
   grid-template-areas:
   "linkIcon email link"
-  "copyright copyright privacy"
-;
+  "copyright copyright privacy";
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 17px;
 }
 
-.linkIcons_block{
+@media screen and (max-width: 768px) {
+  .row {
+    grid-template-areas: "linkIcon"
+    "email"
+    "link"
+    "copyright"
+    "privacy";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
+  }
+}
+
+
+.linkIcons_block {
   grid-area: linkIcon;
   margin-top: 13px;
-  .glyph{
+
+  .glyph {
     display: inline-block;
     height: 72px;
     width: 72px;
@@ -30,7 +44,8 @@
     background-size: contain;
     margin-right: 18px;
   }
-  .aye{
+
+  .aye {
     display: inline-block;
     height: 72px;
     width: 72px;
@@ -40,44 +55,47 @@
   }
 }
 
-.email_blocks{
+.email_blocks {
   grid-area: email;
 
 }
 
 
-.links_block{
+.links_block {
   grid-area: link;
   margin-top: 13px;
   text-align: right;
 }
 
-.copyright_block{
+.copyright_block {
   grid-area: copyright;
-  a{
+
+  a {
     color: $mid-gray;
     text-decoration: underline;
   }
 }
 
-.privacy_block{
-  grid-area:privacy;
+.privacy_block {
+  grid-area: privacy;
   text-align: right;
   text-decoration: underline;
-  a{
+
+  a {
     color: $mid-gray;
 
   }
-  :first-child{
+
+  :first-child {
     margin-right: 18px;
     width: 95px;
   }
 }
 
-@media  screen and (max-width: 1441px){
-  .email_block{
-    input{
-      width: 362px;
+@media screen and (max-width: 1441px) {
+  .email_block {
+    input {
+      max-width: 362px;
     }
   }
 }

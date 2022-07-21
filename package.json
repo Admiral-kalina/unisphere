@@ -19,6 +19,7 @@
     "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-source-filesystem": "^4.17.0",
     "gatsby-transformer-sharp": "^4.17.0",
+    "google-map-react": "^2.2.0",
     "lottie-web": "^5.9.6",
     "normalize.css": "^8.0.1",
     "parallax-js": "^3.1.0",
@@ -27,6 +28,7 @@
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-svg-worldmap": "^2.0.0-alpha.1",
     "sass": "^1.53.0",
     "sharp": "^0.30.7",
     "swiper": "^8.3.1"

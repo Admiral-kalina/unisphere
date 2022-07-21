@@ -4,7 +4,12 @@
   justify-content: flex-end !important;
 }
 .ant-tabs-nav {
-  width: 70%;
+  width: 100%;
+  margin: 0 auto;
+}
+.ant-tabs-nav-wrap {
+  max-width: 1084px;
+  margin: 0 auto;
 }
 .ant-tabs-tab {
   display: flex;

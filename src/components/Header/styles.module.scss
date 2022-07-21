@@ -5,18 +5,19 @@ header {
   justify-content: space-between;
   align-items: center;
   color: $blue;
-  width: 95%;
+  max-width: 1822px;
   margin: 0 auto;
-
   nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     list-style: none;
+    width: 80%;
+
 
     a {
       color: $blue;
       font-size: 16px;
-      margin-right: 20px;
+      margin-right: 40px;
       font-weight: 900;
       text-decoration: none;
     }
