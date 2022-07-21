@@ -19,6 +19,7 @@ import humanity from "../../images/About/icons/humanity.png";
 import security from "../../images/About/icons/security.png";
 import sociable from "../../images/About/icons/sociable.png";
 import lineBg from "../../images/About/lineBg.png"
+import AboutTicker from "../../components/AboutTicker/AboutTicker";
 
 
 const About = () => {
@@ -145,7 +146,7 @@ const About = () => {
             </section>
             <section className={styles.personality}>
                 <p className={styles.personality_title}>The Unisphere personality is:</p>
-                <p className={styles.personality_wideText}>Freedom Independence ◌ Intelligence ◌ Sociability ◌ Digitality Globality</p>
+                <AboutTicker/>
                 <p className={styles.personality_moreText}>Learn more about Unisphere in our <a href="">Brand Guidlines</a>.</p>
             </section>
             <Footer/>
