@@ -9,6 +9,8 @@ import Space from "../../assets/animateImg/Space/Space";
 import Phone from "../../assets/animateImg/Phone/Phone";
 import TimeHeader from "../../assets/animateImg/TimeHeader/TimeHeader";
 import Accordion from "../../components/Accordion/Accordion";
+import AppleBtn from "../../components/UI/AppleBtn";
+import GoogleBtn from "../../components/UI/GoogleBtn";
 
 const Time = () => {
     return(
@@ -57,8 +59,8 @@ const Time = () => {
                            <div className={styles.app_info}>
                                <h2>New Layer app</h2>
                                <p>Unisphere browser. Your ticket to the world of augmented reality. New Layer opens this world for everyone.</p>
-                               <a href='' className={styles.appleBtn}><span></span></a>
-                               <a href='' className={styles.googleBtn}><span></span></a>
+                                <AppleBtn/>
+                               <GoogleBtn/>
                            </div>
                            <div className={styles.app_phone}>
                                <Phone/>

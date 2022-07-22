@@ -2,9 +2,101 @@
 
 .carousel_container{
   top: 30%;
-  position: absolute;
-  left: 65%;
+  position: relative;
+  left: 50%;
   transform: translateX(-50%);
-  width: 410px;
+  width: 1140px;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    width: 500px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+}
+
+.column_left {
+  position: relative;
+  z-index: 1;
+  margin-right: 30px;
+}
+
+.column_right{
+  margin: -80px 0 0 30px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+  .right_row{
+    display: grid;
+    grid-template-areas:
+    "animation greyLinkText"
+    "userStatistic teamStatistic"
+  ;
+    grid-row-gap: 40px;
+    .animation{
+      grid-area: animation;
+    }
+    .grey_linkText{
+      grid-area: greyLinkText;
+      align-self: end;
+      color: $mid-gray;
+      a{
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+    .userStatistic{
+      grid-area: userStatistic;
+      justify-self: start;
+    }
+    .teamStatistic{
+      grid-area: teamStatistic;
+      text-align: left;
+      justify-self: start;
+      margin-left: -100px;
+    }
+    .statisticCount{
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 60px;
+      color: $blue;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+
+.pitchDesk_btn{
+  height: 60px;
+  width: 281px;
+  box-sizing: border-box;
+  margin: 50px 0 0 15px;
+  padding: 13px 65px 14px 36px;
+  position: relative;
+  font-size: 18px;
+  line-height: 33px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  letter-spacing: 2px;
+  color: $blue;
+  border: none;
+  border-radius: 3px;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:36px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../../images/Slide/fileDownload.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

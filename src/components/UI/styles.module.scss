@@ -1,7 +1,6 @@
 @import '../../styles/variables.scss';
 
 .btnLearnMore{
-  margin-top: 50px;
   padding: 13px 65px 14px 36px;
   position: relative;
   font-size: 18px;
@@ -92,5 +91,53 @@
     background-image: url("../../images/icons/arrow.png");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+.apple{
+  a{
+    display: inline-block;
+    padding: 14px;
+    width: 243px;
+    height: 72px;
+    background-color: $blue;
+    border-radius: 15px;
+  }
+  .appleBtn{
+    width: 222px;
+    height: 72px;
+    margin-right: 18px;
+    span{
+      width: 208px;
+      height: 49px;
+      display: inline-block;
+      background-image: url("../../images/Time/appleBtn.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+.google{
+  a{
+    display: inline-block;
+    padding: 14px;
+    width: 243px;
+    height: 72px;
+    background-color: $blue;
+    border-radius: 15px;
+  }
+  .googleBtn{
+    width: 243px;
+    height: 72px;
+    span{
+      width: 208px;
+      height: 49px;
+      display: inline-block;
+      background-image: url("../../images/Time/googleBtn.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }
