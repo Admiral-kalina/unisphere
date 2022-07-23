@@ -32,7 +32,20 @@ html, body {
   .preview__animations {
     width: 100%;
     position: relative;
+    overflow: hidden;
+    .headerBg_about{
+      position: absolute;
+
+    }
+    .headerBg_time{
+      position: absolute;
+
+    }
+
   }
+
+
+
 
   .preview__informations {
     align-self: center;

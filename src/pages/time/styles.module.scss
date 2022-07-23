@@ -195,3 +195,25 @@
   }
 }
 
+.howUse{
+  margin: 209px 0 185px;
+  .howUse_title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'Jura', sans-serif;
+  }
+  .howUse_subtitle{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    max-width: 600px;
+  }
+  .howUse_accordion_block{
+    margin-top: 70px;
+  }
+}
+

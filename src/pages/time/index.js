@@ -11,6 +11,7 @@ import TimeHeader from "../../assets/animateImg/TimeHeader/TimeHeader";
 import Accordion from "../../components/Accordion/Accordion";
 import AppleBtn from "../../components/UI/AppleBtn";
 import GoogleBtn from "../../components/UI/GoogleBtn";
+import headerBg from "../../images/Time/headerBg.png";
 
 const Time = () => {
     return(
@@ -19,6 +20,7 @@ const Time = () => {
                     <div className={parentStyles.bigContainer}>
                         <div className={parentStyles.preview__row}>
                             <div className={parentStyles.preview__animations}>
+                                <img className={parentStyles.headerBg_time} src={headerBg} alt=""/>
                                 <TimeHeader/>
                             </div>
                             <div className={parentStyles.preview__informations}>
@@ -69,9 +71,12 @@ const Time = () => {
                        </div>
                    </section>
                    <section className={styles.howUse}>
-                       <Accordion/>
+                       <h2  className={styles.howUse_title}>How to use?</h2>
+                       <p className={styles.howUse_subtitle}>There are many abilities of using the Unisphere via New Layer app. Find a guide below. </p>
+                       <div className={styles.howUse_accordion_block}>
+                           <Accordion/>
+                       </div>
                    </section>
-
                </div>
             <Footer/>
             </div>

@@ -20,7 +20,7 @@ import security from "../../images/About/icons/security.png";
 import sociable from "../../images/About/icons/sociable.png";
 import lineBg from "../../images/About/lineBg.png"
 import AboutTicker from "../../components/AboutTicker/AboutTicker";
-
+import headerBg from "../../images/About/headerBg.png"
 
 const About = () => {
     return(
@@ -29,6 +29,7 @@ const About = () => {
                 <div className={parentStyles.bigContainer}>
                     <div className={parentStyles.preview__row}>
                         <div className={parentStyles.preview__animations}>
+                            <img className={parentStyles.headerBg_about} src={headerBg} alt=""/>
                             <AboutHeader/>
                         </div>
                         <div className={parentStyles.preview__informations}>

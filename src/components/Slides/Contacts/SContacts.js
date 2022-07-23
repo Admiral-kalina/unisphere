@@ -3,7 +3,7 @@ import * as styles from "./styles.module.scss"
 import SliderMoreBtn from "../../UI/SliderMoreBtn";
 import SocialLinks from "../../UI/SocialLinks";
 import EmailBlock from "../../UI/EmailBlock";
-
+import nImage from "../../../images/Slide/N.png"
 
 const SContacts = () => {
     return (
@@ -23,12 +23,18 @@ const SContacts = () => {
                             <EmailBlock/>
                         </div>
                         <div>
+                            <div className={styles.privacy_block}>
+                                <div className={styles.privacy_block_images}>
+                                    <img src={nImage} alt=""/>
+                                    <img src={nImage} alt=""/>
+                                </div>
+                                <div className={styles.privacy_block_links}>
+                                    <a href="">Privacy policy</a>
+                                    <a href="">Terms of use</a>
+                                </div>
+                            </div>
                             <div className={styles.copyright_block}>
                                 <p>AR Generation Sp. z o. o. © 2021 <a className={styles.generalIformation} href="">GDPR General information</a></p>
-                            </div>
-                            <div className={styles.privacy_block}>
-                                <a href="">Privacy policy</a>
-                                <a href="">Terms of use</a>
                             </div>
                         </div>
                     </div>
