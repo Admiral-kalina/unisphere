@@ -18,6 +18,7 @@ const EventItem = ({event}) => {
             <div className={styles.event_text_container}>
                 <p className={styles.event_item_date}>{event.eventDate}</p>
                 <h3 className={styles.event_item_title}>{event.eventTitle}</h3>
+
             </div>
         </div>
     )
