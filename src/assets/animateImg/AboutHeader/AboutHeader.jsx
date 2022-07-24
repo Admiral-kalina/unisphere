@@ -7,7 +7,9 @@ import darkCircle from "./img/darkBlueCircle.png"
 const AboutHeader = () => {
     return (
         <div className={styles.aboutHeader_container}>
-            <img className={styles.darkCircle_block} src={darkCircle} alt=""/>
+            <div className={styles.darkCircle_block} >
+                <img src={darkCircle} alt=""/>
+            </div>
            <div className={styles.azureCircle_block}>
                <AboutHeaderAzureCircle/>
            </div>

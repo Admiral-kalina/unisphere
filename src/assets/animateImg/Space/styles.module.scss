@@ -3,7 +3,6 @@
   width: 445px;
   height: 311px;
   position: relative;
-
   .ellipse_bg{
     position: absolute;
     top: 50%;
@@ -16,17 +15,23 @@
     left: 54px;
   }
   .mainFigure_block{
+    height: 204px;
+    width: 147px;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
   .cometFigure_block{
+    height: 137px;
+    width: 88px;
     position: absolute;
     right: 0;
     bottom: 57px;
   }
   .circle_block{
+    height: 102px;
+    width: 102px;
     position: absolute;
     bottom: 25px;
     left: 54px;
@@ -35,8 +40,8 @@
 }
 
 .mainFigure_container{
-  height: 204px;
-  width: 147px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 
@@ -58,8 +63,8 @@
 
 .comet_block{
   position: relative;
-  height: 137px;
-  width: 88px;
+  height: 100%;
+  width: 100%;
   .comet_back{
     position: absolute;
   }
@@ -83,8 +88,8 @@
 }
 
 .circle_container{
-  height: 102px;
-  width: 102px;
+  height: 100%;
+  width: 100%;
   position: relative;
 
   .polygon {
@@ -92,7 +97,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    clip-path:  circle(42.7% at 50% 50%);
+    clip-path: circle(42.7% at 50% 50%);
   }
 
   .dashed{

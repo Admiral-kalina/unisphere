@@ -7,32 +7,38 @@
 
   .fonBg_bird_block{
     position: absolute;
-    height: 349px;
-    width: 240px;
+    height: 90.6%;
+    width: 57.1%;
     bottom: 0;
-    left: 79px;
+    left: 18.8%;
   }
   .azureBird_block{
+    width: 57.1%;
+    height: 41.8%;
     top: 0;
     right: 0;
     position: absolute;
   }
   .whiteBird_block{
+    width: 59.7%;
+    height: 51.4%;
     position: absolute;
-    top: 139px;
+    top: 36.1%;
     left: 0;
   }
   .whiteCircle_bird_block{
-    top: 46px;
-    left: 73px;
+    width: 20%;
+    height: 21.8%;
+    top: 11.9%;
+    left: 17.3%;
     position: absolute;
 
   }
 }
 
 .whiteBird_container{
-  width: 251px;
-  height: 198px;
+  width: 100%;
+  height: 100%;
   position: relative;
   .polygon{
     position: absolute;
@@ -42,17 +48,27 @@
     width: 100%;
 
   }
+  img{
+    height: 100%;
+    width: 100%;
+  }
   .dashed{
+    height:auto !important;
+    width:auto !important;
     position: absolute !important;
-    top: -50px !important;
+    top: -30px !important;
     left: -30px !important;
   }
 }
 
 .azureBird_container{
-  width: 204px;
-  height: 161px;
+  width: 100%;
+  height: 100%;
   position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+  }
   .polygon{
     position: absolute;
     top: 0;
@@ -61,6 +77,8 @@
     width: 100%;
   }
   .dashed{
+    width: auto !important;
+    height: auto !important;
     position: absolute !important;
     top: -50px !important;
     left: -30px !important;
@@ -68,9 +86,13 @@
 }
 
 .whiteCircle_container{
-  width: 84px;
-  height: 84px;
+  width: 100%;
+  height: 100%;
   position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+  }
   .polygon{
     position: absolute;
     top: 0;
@@ -79,8 +101,18 @@
     width: 100%;
   }
   .dashed{
+    width: auto !important;
+    height: auto !important;
     position: absolute !important;
     top: -30px !important;
     left: -30px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .birds_container {
+
+    height: calc(385px * 0.7);
+    width: calc(420px * 0.7);
   }
 }

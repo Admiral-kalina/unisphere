@@ -33,8 +33,8 @@ const About = () => {
                             <AboutHeader/>
                         </div>
                         <div className={parentStyles.preview__informations}>
-                            <h2>THIS IS UNISPHERE</h2>
-                            <p>We created the Unisphere metaverse and made it free from the physical reality limits.</p>
+                            <h2 className={parentStyles.preview__title}>THIS IS UNISPHERE</h2>
+                            <p className={parentStyles.preview__subtitle}>We created the Unisphere metaverse and made it free from the physical reality limits.</p>
                         </div>
                     </div>
                     <div className={parentStyles.preview__scroll}>

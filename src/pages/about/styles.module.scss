@@ -16,7 +16,6 @@
     line-height: 36px;
     font-weight: 400;
   }
-
 }
 
 .ourInformation_lineBg{
@@ -73,15 +72,15 @@
   .ourInformation_metahumans__animation{
     grid-area: metahumansAnimation;
     justify-self: start;
-    margin-left: 66px;
+    margin-left: 166px;
   }
 }
 
 
 
 
-.ourValues{
 
+.ourValues{
   .ourValues_title{
 
     font-family: 'Jura', sans-serif;
@@ -118,7 +117,6 @@
       grid-row-gap: 30px;
     }
     .ourValues_column{
-
       display: flex;
       .ourValues_column__text{
 
@@ -166,8 +164,84 @@
   }
 }
 
-//<section className={styles.personality}>
-//<p className={styles.personality_title}>The Unisphere personality is:</p>
-//<p className={styles.personality_wideText}>Freedom Independence ◌ Intelligence ◌ Sociability ◌ Digitality Globality</p>
-//<p className={styles.personality_moreText}>Learn more about Unisphere in our <a href="">Brand Guidlines</a>.</p>
-//</section>
+@media screen and (max-width: 1380px) {
+  .ourInformation_row {
+    .ourInformation_philosophy{
+      max-width: 440px;
+      margin-right: 11px;
+    }
+    .ourInformation_philosophy__animation{
+      margin-left: 50px;
+    }
+    .ourInformation_mission__animation{
+      margin-right: 50px;
+    }
+    .ourInformation_mission{
+      max-width: 440px;
+      margin-left: 11px;
+    }
+    .ourInformation_metahumans{
+      max-width: 440px;
+      margin-right: 11px;
+    }
+    .ourInformation_metahumans__animation{
+      margin-left: 36px;
+    }
+  }
+
+  .ourInformation_lineBg{
+    width: 610px;
+    position: absolute;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ourInformation_row {
+    .ourInformation_philosophy{
+      max-width: 400px;
+      margin-right: 11px;
+    }
+    .ourInformation_philosophy__animation{
+      margin-left: 0px;
+      width: 80px;
+      height: 80px;
+    }
+    .ourInformation_mission__animation{
+      margin-right: 50px;
+    }
+    .ourInformation_mission{
+      max-width: 440px;
+      margin-left: 11px;
+    }
+    .ourInformation_metahumans{
+      max-width: 440px;
+      margin-right: 11px;
+    }
+    .ourInformation_metahumans__animation{
+      margin-left: 36px;
+    }
+  }
+
+  .ourInformation_lineBg{
+    width: 610px;
+    position: absolute;
+    height: 90%;
+  }
+
+  .ourInformation{
+    position: relative;
+    .ourInformation_title{
+      font-family: 'Jura', sans-serif;
+      text-transform: uppercase;
+      font-size: 36px;
+      line-height: 48px;
+      font-weight: 700;
+    }
+    .ourInformation_subtitle{
+      font-size: 16px;
+      line-height: 32px;
+      font-weight: 400;
+    }
+  }
+}

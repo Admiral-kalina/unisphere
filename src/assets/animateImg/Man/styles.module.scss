@@ -1,5 +1,4 @@
 .manContainer{
-  margin-left: 100px;
   position: relative;
   width: 493px;
   height: 408px;
@@ -7,67 +6,76 @@
   .azureBg_block{
     position: absolute;
     left: 50%;
-    bottom: 23px;
+    bottom: 5.6%;
     transform: translateX(-50%);
   }
   .manCube_block{
     position: absolute;
     z-index: 6;
-    top: 141px;
-    right: 38px;
+    top: 34.5%;
+    right: 9.5%;
 
   }
   .manCircle_block{
     position: absolute;
-    left: 13px;
-    bottom: 31px;
+    left: 2.6%;
+    bottom: 7.6%;
     z-index: 5;
   }
   .manGlasses_block{
     position: absolute;
     z-index: 6;
-    left: 78px;
-    top: 98px;
+    left: 15.8%;
+    top: 24%;
 
   }
   .manHairBg_block{
     z-index: 0;
     position: absolute;
-    top: 33px;
-    left: 95px;
+    top: 8%;
+    left: 19.2%;
 
   }
   .manTriangle_block{
     z-index: 5;
     position: absolute;
-    left: 61.9px;
-    bottom: 45px;
+    left: 12.5%;
+    bottom: 11%;
 
   }
   .manEar_block{
     position: absolute;
-    right: 182px;
-    top: 120px;
+    right: 36.9%;
+    top: 29.4%;
     z-index: 5;
   }
 
   .manFace_block{
+    width: 35.6%;
+    height: 250px;
     position: absolute;
     bottom: 81.92px;
     left: 116px;
 
   }
   .manHair_block{
+    width: 242px;
+    height: 154px;
     z-index: 4;
      position: absolute;
      top: 0;
      left: 67.12px;
    }
 }
+
 .manHair_container{
-  width: 242px;
-  height: 154px;
+  height: 100%;
+  width: 100%;
   position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+  }
   .polygon{
     position: absolute;
     top: 0;
@@ -76,25 +84,33 @@
     width: 100%;
   }
    .dashed{
-    position: absolute !important;
-    top: -40px !important;
-    left: -45px !important;
+     height: auto !important;
+     width: auto !important;
+     position: absolute !important;
+     top: -40px !important;
+     left: -45px !important;
   }
 }
 
 
 .manFace_container{
-  width: 176px;
-  height: 250px;
+  height: 100%;
+  width: 100%;
   position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+  }
   .polygon{
     position: absolute;
     top: 0;
     clip-path:polygon(86% 0%, 89% 98%, 84% 100%, 73% 100%, 68% 99%, 66% 98%, 63% 96%, 60.5% 93.5%, 58% 90%, 58% 89%, 58% 67%, 39% 67%, 33% 66.5%, 23% 65%, 16% 62%, 14% 61%, 10% 58%, 7% 55%, 4% 51%, 2% 48%, 1% 45%, 1% 42%, 0% 40%, 0% 37%, 0% 0%);
-     height: 100%;
+    height: 100%;
     width: 100%;
   }
   .dashed{
+    width: auto !important;
+    height: auto !important;
     position: absolute !important;
     top: -40px !important;
     left: -30px !important;
