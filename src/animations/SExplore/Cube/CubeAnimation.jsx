@@ -29,7 +29,6 @@ const Cube = () => {
             <div className={styles.top_side}>
                 <div id='top_side_cube_scene' className={styles.polygon}>
                     <img className={styles.dashed} data-depth={2} src={darkDashed} alt=""/>
-
                 </div>
             </div>
         </div>

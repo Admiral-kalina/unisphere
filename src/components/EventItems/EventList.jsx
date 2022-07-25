@@ -7,6 +7,7 @@ import {Link} from "gatsby";
 
 const EventList = () => {
     const [events, setEvents] = useState(Events)
+
     return (
         <div className={styles.event_list_container}>
             {events.map(event => {
