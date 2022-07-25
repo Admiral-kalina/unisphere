@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react'
-import {Row, Col, Carousel, Button} from 'antd'
+import {Carousel} from 'antd'
 
 const ExploreCarousel = ({children}) => {
     const carousel = useRef();
