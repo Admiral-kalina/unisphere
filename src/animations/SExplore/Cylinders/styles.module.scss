@@ -29,7 +29,8 @@
   background-color: $light-blue;
   transform: translateY(88%);
   opacity: 0;
-  animation: CylinderAnimation 2s forwards;
+  animation: CylinderAnimation 1s forwards;
+  animation-delay: 0.8s;
   .polygon {
     position: absolute;
     top: 0;
@@ -48,7 +49,9 @@
   border-radius: 50px/25px;
   background-color: $light-blue;
   transform: translateY(-135%);
-  animation: CylinderAnimation 2s forwards;
+  animation: CylinderAnimation 1s forwards;
+  animation-delay: 0.8s;
+
   .polygon {
     position: absolute;
     top: 0;
@@ -66,7 +69,9 @@
   border-radius: 50px/25px;
   background-color: $light-blue;
   transform: translateY(-100%);
-  animation: CylinderAnimation 2s forwards;
+  animation: CylinderAnimation 1s forwards;
+  animation-delay: 0.8s;
+
   .polygon {
     position: absolute;
     top: 0;
@@ -74,6 +79,7 @@
     height: 100%;
     clip-path: polygon(50% 28.2%, 53% 28.2%, 60% 28.2%, 60% 28.2%, 66% 28.1%, 74% 27.5%, 80% 27%, 87% 26%, 93% 23.8%, 100% 18.7%, 100% 84%, 88% 88%, 76% 91%, 65% 92%, 60% 92.2%, 58% 92.5%, 53% 92%);
     background-color: #ffffff;
+
   }
 }
 .cylinder1:before, .cylinder2:before, .cylinder3:before {

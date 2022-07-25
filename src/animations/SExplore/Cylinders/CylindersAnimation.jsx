@@ -19,7 +19,7 @@ const CylindersAnimation = () => {
         new Parallax(azure_bird_scene);
     });
     return (
-        <div className={styles.cylinder_container}>
+        <div className={`${styles.cylinder_container}`}>
             <div className={styles.cylinder_wrapper}>
                 <div className={styles.cylinder1}>
                     <div id="first_cylinder_scene" className={styles.polygon}>

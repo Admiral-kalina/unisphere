@@ -1,0 +1,85 @@
+@import '../../../styles/variables.scss';
+
+.lens_wrapper {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 120px;
+  left: -200px;
+  height: 30px;
+  width: 250px;
+  background-color: red;
+  z-index: 0;
+  border-radius: 50px;
+  opacity: 1;
+  animation: line_animation .5s linear forwards;
+}
+
+.magnifying_glass {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  box-sizing: content-box;
+  border: 30px solid $light-blue;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0;
+  animation: glassAnimation 1s linear forwards;
+  animation-delay: 1.2s;
+}
+
+.overlay_wrapper {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  top: -50px;
+  .overlay {
+    width: 200px;
+    height: 200px;
+    background-color: $dark-blue;
+    animation: overlayAnimation 1s linear forwards;
+    animation-delay: 1.2s;
+    border-bottom-right-radius: 100%;
+    opacity: 0;
+  }
+}
+
+.magnifying_glass:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -110px;
+  bottom: -50px;
+  border-width: 0;
+  background: $light-blue;
+  width: 150px;
+  height: 40px;
+  transform: rotate(45deg);
+}
+
+@keyframes glassAnimation {
+  from {
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+  }
+  to {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+  }
+}
+
+@keyframes overlayAnimation {
+  from {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-100%, -100%);
+    opacity: 1;
+
+  }
+}
