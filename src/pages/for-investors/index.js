@@ -8,7 +8,7 @@ const ForInvestors = () => {
         <div>
             <div>ForInvestors</div>
                 <ExploreAnimations />
-
+                <Test/>
             <Footer/>
 
         </div>
