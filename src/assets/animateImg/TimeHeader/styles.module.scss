@@ -1,29 +1,37 @@
 .timeHeader_container{
+  height: 686px;
   width: 100%;
-  height: 100%;
+
   position: relative;
   .blueBallon_block{
+    height: 40.6%;
+    width: 20.3%;
     position: absolute;
-    left: 147px;
-    bottom: 45px;
+    left: 15.3%;
+    bottom: 6.5%;
 
   }
   .darkBallon_block{
+    height: 18%;
+    width: 9%;
     position: absolute;
-    top: 36px;
-    left: 377px;
+    top: 5.5%;
+    left: 39.2%;
 
   }
   .cube_block{
+    width: 23.6%;
+    height: 57.2%;
     position: absolute;
-    right: 0;
-    bottom: 136px;
+    right: 27%;
+    bottom: 11.5%;
   }
 }
 
 .timeCube{
-  width: 452px;
-  height: 452px;
+
+  height: 100%;
+  width: 100%;
   position: relative;
 
   .cubeBg{
@@ -61,16 +69,27 @@
 
 .timeBlueBalloon_container{
   position: relative;
-  height: 279px;
-  width: 195px;
+
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%
+  }
   .polygon {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
+    object-fit: contain;
   clip-path: ellipse(49% 36% at 50% 36%);
   }
   .dashed{
+
+    height: auto !important;
+    width: auto !important;
     position: absolute !important;
     top: -80px !important;
     left: -30px !important;
@@ -79,8 +98,9 @@
 
 .timeDarkBalloon_container{
   position: relative;
-  height: 124px;
-  width: 87px;
+
+  height: 100%;
+  width: 100%;
   .polygon {
     position: absolute;
     top: 0;

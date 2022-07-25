@@ -14,7 +14,7 @@ const AnimateLogoTriangle = () => {
     });
     return (
         <div id='animate_logo_triangle_container_scene'>
-            <div id='animate_logo_triangle_scene' data-depth={2} className={styles.animateLogo_triangle_container} >
+            <div id='animate_logo_triangle_scene' data-depth={6} className={styles.animateLogo_triangle_container} >
                 <img src={triangle} alt=""/>
                 <div data-depth={3} className={styles.polygon}>
                     <img className={styles.dashed} src={dashed} alt=""/>

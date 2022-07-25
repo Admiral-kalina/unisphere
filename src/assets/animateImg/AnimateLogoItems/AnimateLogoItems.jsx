@@ -14,9 +14,8 @@ const AnimateLogoItems = () => {
     });
 
     return (
-        <div className={styles.zalupa} id='animate_logo_items_scene' data-depth={20}>
+        <div id='animate_logo_items_scene' data-depth={20}>
         <div  className={styles.logoItems_container}>
-
                <div className={styles.logoItems_circle_block}>
                    <AnimateLogoCircle />
                </div>

@@ -20,12 +20,12 @@ const Time = () => {
                     <div className={parentStyles.bigContainer}>
                         <div className={parentStyles.preview__row}>
                             <div className={parentStyles.preview__animations}>
-                                <img className={parentStyles.headerBg_time} src={headerBg} alt=""/>
+                                <img className={parentStyles.headerBg_about } src={headerBg} alt=""/>
                                 <TimeHeader/>
                             </div>
                             <div className={parentStyles.preview__informations}>
-                                <h2>EXPLORE NEW WORLD</h2>
-                                <p>We created the Unisphere metaverse and made it free from the physical reality limits.</p>
+                                <h2  className={parentStyles.preview__title}>EXPLORE NEW WORLD</h2>
+                                <p  className={parentStyles.preview__subtitle}>We created the Unisphere metaverse and made it free from the physical reality limits.</p>
                             </div>
                         </div>
                         <div className={parentStyles.preview__scroll}>

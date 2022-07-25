@@ -1,9 +1,12 @@
 
 .space_container{
-  width: 445px;
   height: 311px;
+  width: 445px;
   position: relative;
+
   .ellipse_bg{
+    height: 75.2%;
+    width: 86.9%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,31 +14,32 @@
   }
   .star{
     position: absolute;
-    top: 17px;
-    left: 54px;
+    height: 23.47%;
+    width: 12.8%;
+    top: 5.1%;
+    left: 12.1%;
   }
   .mainFigure_block{
-    height: 204px;
-    width: 147px;
+    height: 65.5%;
+    width: 33%;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
   .cometFigure_block{
-    height: 137px;
-    width: 88px;
+    height: 44%;
+    width: 19.7%;
     position: absolute;
     right: 0;
-    bottom: 57px;
+    bottom: 18.3%;
   }
   .circle_block{
-    height: 102px;
-    width: 102px;
+    height: 32.8%;
+    width: 22.9%;
     position: absolute;
-    bottom: 25px;
-    left: 54px;
-
+    bottom: 8%;
+    left: 12.1%;
   }
 }
 
@@ -44,7 +48,10 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-
+  img{
+    height: 100%;
+    width: 100%;
+  }
   .polygon {
     position: absolute;
     top: 0;
@@ -54,6 +61,8 @@
   }
 
   .dashed{
+    width: auto !important;
+    height: auto !important;
     position: absolute !important;
     top: -50px !important;
     left: -30px !important;
@@ -65,8 +74,15 @@
   position: relative;
   height: 100%;
   width: 100%;
+  img{
+    height: 100%;
+    width: 100%;
+  }
   .comet_back{
     position: absolute;
+
+    height: 92%;
+    width: 70%;
   }
   .cometAnimateFigure_container {
   position: absolute;
@@ -81,6 +97,8 @@
   }
 
   .dashed{
+    width: auto !important;
+    height: auto !important;
     position: absolute !important;
     top: -50px !important;
     left: -30px !important;
@@ -91,7 +109,10 @@
   height: 100%;
   width: 100%;
   position: relative;
-
+  img{
+    height: 100%;
+    width: 100%;
+  }
   .polygon {
     position: absolute ;
     top: 0;
@@ -101,8 +122,18 @@
   }
 
   .dashed{
+    width: auto !important;
+    height: auto !important;
     position: absolute !important;
     top: -20px !important;
     left: -30px !important;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .space_container {
+    height: calc(311px * 0.7);
+    width: calc(445px * 0.7);
   }
 }

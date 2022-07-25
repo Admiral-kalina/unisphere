@@ -1,0 +1,29 @@
+.explore_animation_container {
+  position: relative;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  .cube_wrapper{
+    position: absolute;
+    right: -23%;
+    top: 5%;
+    z-index: 6;
+  }
+  .lens_wrapper {
+    position: absolute;
+    z-index: 5;
+    top: 25%;
+    left: 40%;
+  }
+  .cylinder_wrapper {
+    position: absolute;
+    z-index: 5;
+    bottom: -17%;
+    left: -20%;
+  }
+  .shield_wrapper {
+
+  }
+}

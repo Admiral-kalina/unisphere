@@ -10,8 +10,8 @@ const Qube = () => {
             <div className={styles.vase_component}>
                 <Vase/>
             </div>
-            <div>
-                <BackSide className={styles.backSide_component}/>
+            <div className={styles.backSide_component}>
+                <BackSide />
             </div>
         </div>
     );
