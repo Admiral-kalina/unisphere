@@ -14,8 +14,6 @@ const Cube = () => {
         const azure_bird_scene = document.getElementById("top_side_cube_scene");
         new Parallax(azure_bird_scene);
     });
-    
-
     return (
         <div id='cube-animation' className={styles.cube_animation_container}>
             <div className={styles.left_side}>

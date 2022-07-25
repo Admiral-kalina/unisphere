@@ -13,7 +13,7 @@ const SExplore = () => {
             <div className={styles.exploreSlide_information}>
                 <h3 className='slider_title'>EXPLORE</h3>
                 <p className='slider_subtitle'>Meet the Unisphere metaverse here. Find out what is how to apply and what to do in it.</p>
-                <SliderMoreBtn >Learn More</SliderMoreBtn>
+                <SliderMoreBtn>Learn More</SliderMoreBtn>
             </div>
         </section>
     );

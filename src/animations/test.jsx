@@ -1,40 +1,92 @@
-import React from "react";
-import './styles.scss'
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const Test = () => {
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/scrollbar";
 
-    return(
-        <div>
-            <div className='magnifying-glass'></div>
-            {/*<div className="animation02">*/}
-            {/*    <div className="rhombus_box">*/}
-            {/*        <span className="rhombus_item_wrapper rhombus_item01_wrapper"><span className="rhombus_item"></span></span>*/}
-            {/*        <span className="rhombus_item_wrapper rhombus_item02_wrapper"><span className="rhombus_item"></span></span>*/}
-            {/*    </div>*/}
-            {/*    <div className="double_content">*/}
-            {/*        <div className="double_wrapper02 dotted02">*/}
-            {/*            <div className="dotted_hide">*/}
-            {/*                <div className="double_wrapper01 dotted01"><span className="dotted_right"></span></div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*        <div className="double_wrapper02 white02">*/}
-            {/*            <div className="double_wrapper01 white01"></div>*/}
-            {/*        </div>*/}
-            {/*        <div className="double_wrapper02 gray02">*/}
-            {/*            <div className="double_wrapper01 gray01"></div>*/}
-            {/*        </div>*/}
-            {/*        <div className="double_wrapper02 orange02">*/}
-            {/*            <div className="double_wrapper01 orange01"></div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className="name">*/}
-            {/*        <p>KURI-CHAN</p>*/}
-            {/*        <span className="name_circle01"></span>*/}
-            {/*        <span className="name_circle02"></span>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+import "./styles.scss";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
-        </div>
-    )
+// import required modules
+
+export default function Test() {
+    return (
+        <>
+            <Swiper
+                cssMode={true}
+                navigation={true}
+                pagination={true}
+                mousewheel={true}
+                keyboard={true}
+                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                className="mySwiper"
+            >
+                <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+                <SwiperSlide>Slide 5</SwiperSlide>
+                <SwiperSlide>Slide 6</SwiperSlide>
+                <SwiperSlide>Slide 7</SwiperSlide>
+                <SwiperSlide>Slide 8</SwiperSlide>
+                <SwiperSlide>Slide 9</SwiperSlide>
+            </Swiper>
+
+        </>
+    );
 }
-export default Test
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useEffect } from "react";
+// import { useAnimation, motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
+// import './styles.scss'
+// const squareVariants = {
+//     visible: { opacity: 1, scale: 4, transition: { duration: 2 } },
+//     hidden: { opacity: 0, scale: 0 }
+// };
+// function Square() {
+//     const controls = useAnimation();
+//     const [ref, inView] = useInView();
+//     useEffect(() => {
+//         if (inView) {
+//             controls.start("visible");
+//         }
+//     }, [controls, inView]);
+//     return (
+//         <motion.div
+//             ref={ref}
+//             animate={controls}
+//             initial="hidden"
+//             variants={squareVariants}
+//             className="left"
+//         >
+//             <div className="polygon"></div>
+//         </motion.div>
+//     );
+// }
+// export default function Test() {
+//     return (
+//         <div className="App">
+//             <h1 className="title">Scroll Down</h1>
+//             <Square />
+//             <Square />
+//             <Square />
+//             <Square />
+//         </div>
+//     );
+// }
