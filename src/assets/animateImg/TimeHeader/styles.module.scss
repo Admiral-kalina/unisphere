@@ -19,63 +19,45 @@
     left: 39.2%;
 
   }
-  .cube_block{
-    width: 23.6%;
-    height: 57.2%;
+  .rhombus_block{
+    height: 57.5%;
+    width: 23.8%;
     position: absolute;
-    right: 27%;
+    right: 20%;
     bottom: 11.5%;
   }
 }
 
-.timeCube{
-
-  height: 100%;
-  width: 100%;
+.timeRhombus_container{
   position: relative;
-
-  .cubeBg{
+  height: auto;
+  width: 100%;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .polygon {
     position: absolute;
     top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(99% 1%, 18% 40%, 56% 43%);
   }
-  .rotateTriangle{
-    position: absolute;
-    z-index: 1;
-    transform: scaleX(-1) rotate(-60deg);
-    top: 39px;
-    left: 106px;
-  }
-  .timeTriangle_container{
-    position: relative;
-    height: 168px;
-    width: 187px;
-    left: 41px;
-
-    .polygon {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      clip-path: polygon(100% 0, 0 92%, 48% 100%);
-    }
-
-    .dashed{
-      position: absolute !important;
-      top: -50px !important;
-      left: -30px !important;
-    }
+  .dashed{
+    height: auto !important;
+    width: auto !important;
+    position: absolute !important;
+    top: -80px !important;
+    left: -30px !important;
   }
 }
 
 .timeBlueBalloon_container{
   position: relative;
-
-  height: 100%;
+  height: auto;
   width: 100%;
-  object-fit: contain;
   img{
-    object-fit: contain;
-    height: 100%;
+    height: auto;
     width: 100%
   }
   .polygon {
@@ -84,10 +66,9 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-  clip-path: ellipse(49% 36% at 50% 36%);
+    clip-path: ellipse(49% 36% at 50% 36%);
   }
   .dashed{
-
     height: auto !important;
     width: auto !important;
     position: absolute !important;
@@ -98,19 +79,26 @@
 
 .timeDarkBalloon_container{
   position: relative;
-
-  height: 100%;
+  height: auto;
   width: 100%;
+  img{
+    height: auto;
+    width: 100%
+  }
   .polygon {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     clip-path:polygon(50% 99%, 43% 92%, 36% 86%, 30% 80%, 23% 73%, 16% 65%, 11% 59%, 8% 55%, 5% 50%, 3% 45%, 2% 41%, 0% 38%, 0% 35%, 1% 31%, 2% 27%, 4% 22%, 7% 18%, 11% 15%, 14% 11%, 18% 8%, 24% 5%, 26% 4%, 34% 2%, 38% 1%, 43% 0%, 50% 0%, 57% 0%, 63% 1%, 68% 2%, 73% 4%, 77% 6%, 80% 7%, 84% 10%, 86% 11%, 90% 14%, 92% 16%, 94% 18%, 96% 21%, 98% 24%, 99% 27%, 100% 29%, 100% 30%, 100% 34%, 100% 38%, 99.5% 40%, 98.5% 43%, 97% 47%, 95% 52%, 91% 57%, 87% 62%, 84% 67%, 80% 71%, 77% 75%, 72% 79%, 69% 82%, 67% 84%)
   }
   .dashed{
+    height: auto !important;
+    width: auto !important;
     position: absolute !important;
     top: -80px !important;
     left: -40px !important;
   }
 }
+
+

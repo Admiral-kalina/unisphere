@@ -10,7 +10,6 @@ const ForInvestors = () => {
                 <ExploreAnimations />
                 <Test/>
             <Footer/>
-
         </div>
 
     )

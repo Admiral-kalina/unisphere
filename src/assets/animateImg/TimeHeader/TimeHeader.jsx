@@ -1,7 +1,7 @@
 import React from 'react';
 import TimeHeaderBlueBallon from "./TimeHeaderBlueBallon";
 import TimeHeaderDarkBalloon from "./TimeHeaderDarkBalloon";
-import TimeHeaderCube from "./TimeHeaderCube";
+import TimeHeaderRhombus from "./TimeHeaderRhombus";
 import * as styles from "./styles.module.scss";
 
 
@@ -14,8 +14,8 @@ const TimeHeader = () => {
             <div className={styles.darkBallon_block}>
                 <TimeHeaderDarkBalloon/>
             </div>
-            <div className={styles.cube_block}>
-                <TimeHeaderCube/>
+            <div className={styles.rhombus_block}>
+                <TimeHeaderRhombus/>
             </div>
         </div>
     );
