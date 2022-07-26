@@ -130,9 +130,6 @@ const About = () => {
                                     <p>We are creating a space that contribute the development of technologies useful for humanity.</p>
                                 </div>
                             </div>
-
-
-
                             <div className={styles.ourValues_column}>
                                 <img src={humanity} alt="humanity"/>
                                 <div className={styles.ourValues_column__text}>

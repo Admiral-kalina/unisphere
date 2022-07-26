@@ -51,32 +51,32 @@ const Time = () => {
                            </div>
                        </div>
                    </section>
-                   <section className={styles.app}>
-                       <div className={styles.app_row}>
-                           <div className={styles.app_header}>
-                               <span className={styles.bgLine}></span>
-                               <h2 className={styles.app_title}>Enter your metaverse</h2>
-                               <p className={styles.app_subtitle}>Connect to Unisphere with the New Layer app to create your metaverse and interact with other users.</p>
-                           </div>
-                           <div className={styles.app_info}>
-                               <h2>New Layer app</h2>
-                               <p>Unisphere browser. Your ticket to the world of augmented reality. New Layer opens this world for everyone.</p>
-                                <AppleBtn/>
-                               <GoogleBtn/>
-                           </div>
-                           <div className={styles.app_phone}>
-                               <Phone/>
-                               <span></span>
-                           </div>
-                       </div>
-                   </section>
-                   <section className={styles.howUse}>
-                       <h2  className={styles.howUse_title}>How to use?</h2>
-                       <p className={styles.howUse_subtitle}>There are many abilities of using the Unisphere via New Layer app. Find a guide below. </p>
-                       <div className={styles.howUse_accordion_block}>
-                           <Accordion/>
-                       </div>
-                   </section>
+                   {/*<section className={styles.app}>*/}
+                   {/*    <div className={styles.app_row}>*/}
+                   {/*        <div className={styles.app_header}>*/}
+                   {/*            <span className={styles.bgLine}></span>*/}
+                   {/*            <h2 className={styles.app_title}>Enter your metaverse</h2>*/}
+                   {/*            <p className={styles.app_subtitle}>Connect to Unisphere with the New Layer app to create your metaverse and interact with other users.</p>*/}
+                   {/*        </div>*/}
+                   {/*        <div className={styles.app_info}>*/}
+                   {/*            <h2>New Layer app</h2>*/}
+                   {/*            <p>Unisphere browser. Your ticket to the world of augmented reality. New Layer opens this world for everyone.</p>*/}
+                   {/*             <AppleBtn/>*/}
+                   {/*            <GoogleBtn/>*/}
+                   {/*        </div>*/}
+                   {/*        <div className={styles.app_phone}>*/}
+                   {/*            <Phone/>*/}
+                   {/*            <span></span>*/}
+                   {/*        </div>*/}
+                   {/*    </div>*/}
+                   {/*</section>*/}
+                   {/*<section className={styles.howUse}>*/}
+                   {/*    <h2  className={styles.howUse_title}>How to use?</h2>*/}
+                   {/*    <p className={styles.howUse_subtitle}>There are many abilities of using the Unisphere via New Layer app. Find a guide below. </p>*/}
+                   {/*    <div className={styles.howUse_accordion_block}>*/}
+                   {/*        <Accordion/>*/}
+                   {/*    </div>*/}
+                   {/*</section>*/}
                </div>
             <Footer/>
             </div>
