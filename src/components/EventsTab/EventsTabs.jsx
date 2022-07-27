@@ -14,12 +14,12 @@ const onChange = (key) => {
 
 const EventsTab = () => (
     <Tabs onChange={onChange} type="card">
-        <TabPane tab={<EventsTabIcon/>} key="1">
-            <EventList />
-        </TabPane>
-        <TabPane tab={<MapMark/>} key="2">
-           <EventsMap/>
-        </TabPane>
+        {/*<TabPane tab={<EventsTabIcon/>} key="1">*/}
+        {/*    <EventList />*/}
+        {/*</TabPane>*/}
+        {/*<TabPane tab={<MapMark/>} key="2">*/}
+        {/*   <EventsMap/>*/}
+        {/*</TabPane>*/}
     </Tabs>
 );
 
