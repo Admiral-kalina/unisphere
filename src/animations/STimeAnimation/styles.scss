@@ -1,0 +1,185 @@
+@import '../../styles/variables.scss';
+
+.time-animations-wrapper {
+  position: relative;
+  left: 40%;
+  top: 130px;
+
+  .time_circle_wrapper {
+    position: absolute;
+  }
+
+  .sand-clock_wrapper {
+    position: absolute;
+    top: 100px;
+    left: 4.5%;
+    z-index: 30;
+  }
+
+  .blue-circle_wrapper {
+    position: absolute;
+    top: 220px;
+    left: -5%;
+    transform: scale(0);
+    animation: fadeAnim 1s 0.5s linear forwards;
+    @keyframes fadeAnim {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+  }
+  .circles_wrapper {
+    position: relative;
+    max-width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.3);
+    .full_circle_box {
+      transform: rotate(150deg);
+      position: relative;
+      svg {
+        width: 100%;
+        height: 100%;
+        transform: scale(1, -1);
+      }
+      .full_circle {
+        stroke: $dark-blue;
+        stroke-width: 200px;
+        stroke-dasharray: 628;
+        stroke-dashoffset: 628;
+        animation: circleAnimations 1.5s linear forwards;
+      }
+      .polygon {
+        transform: rotate(210deg) !important;
+        position: absolute !important;
+        top: 0;
+        clip-path: polygon(24% 5%, 36% 0, 50% 0%, 58% 2%, 63% 4%, 69% 5%, 76% 9%, 84% 16%, 91% 25%, 95% 35%, 97% 45%, 97% 54%, 95% 66%, 93% 72%, 90% 78%, 84% 85%, 79% 91%, 73% 95%, 65% 98%, 58% 100%, 43% 100%, 33% 100%, 23% 97%, 18% 92%, 7% 85%, 1% 76%, 9% 72%, 16% 68%, 22% 64%, 30% 59%, 40% 54%, 46% 50%, 38% 41%, 32% 33%, 26% 26%, 14% 11%);
+        width: 100%;
+        height: 100%;
+        background-color: $dark-blue;
+        opacity: 0;
+        animation: ParticleFade 0.2s linear forwards;
+        animation-delay: 1.5s;
+        .dashed {
+          height: 500px !important;
+          width: 500px !important;
+          position: absolute !important;
+          top: -30px !important;
+          left: -30px !important;
+          z-index: 20;
+        }
+      }
+    }
+    .wrapper_circle_box {
+      position: absolute;
+      max-width: 450px;
+      max-height: 450px;
+      transform: rotate(219deg);
+      z-index: 20;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        transform: scale(2);
+      }
+
+      .wrapper_circle {
+        stroke: $dark-blue;
+        stroke-width: 35px;
+        stroke-dasharray: 628;
+        stroke-dashoffset: 100;
+        stroke-linecap: round;
+        animation: circleWrapperAnimations 1s linear forwards;
+        animation-delay: 0.5s;
+        opacity: 0;
+      }
+    }
+    @keyframes circleAnimations {
+      from {
+        stroke-dashoffset: 628;
+      }
+      to {
+        stroke-dashoffset: 140;
+      }
+    }
+    @keyframes circleWrapperAnimations {
+      from {
+        stroke-dashoffset: 628;
+        opacity: 1;
+      }
+      to {
+        stroke-dashoffset: 100;
+        opacity: 1;
+      }
+    }
+    @keyframes ParticleFade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  // sand clock
+  .sand_clock_wrapper {
+    animation: sandClockRotate 1s 0.5s linear forwards;
+    position: relative;
+    left: 25%;
+
+    .sand_clock_block {
+      .polygon_sand-clock {
+        transform: scale(0);
+        animation: sandClockAnimation 1s 0.5s linear forwards;
+      }
+    }
+    .polygon {
+      clip-path: polygon(15% 5%, 16% 5%, 16% 3%, 18% 2%, 23% 1%, 28% 1%, 32% 1%, 39% .7%, 45% .7%, 52% .7%, 57% .7%, 63% .7%, 67% .7%, 74% 1%, 80% 1.5%, 86% 2%, 93% 3%, 98% 5%, 99% 7%, 99% 9%, 99% 12%, 99% 15%, 99% 19%, 99% 21%, 99% 24%, 99% 26%, 99% 29%, 99% 31%, 99% 34%, 98% 36%, 97% 39%, 96% 40%, 89% 43%, 87% 43%, 80% 44%, 75% 44%, 70% 45%, 63% 48%, 62% 50%, 64% 53%, 75% 54%, 78% 54%, 80% 54.5%, 84% 55%, 90% 56%, 98% 61%, 99% 65%, 99% 68%, 99% 71%, 99% 74%, 99% 77%, 99% 81%, 99% 84%, 99% 87%, 99% 90%, 99% 92%, 97.5% 95%, 90% 96%, 81% 97%, 77% 97.5%, 69% 98%, 61% 98%, 54% 98%, 45% 98%, 39% 98%, 30% 98%, 20% 97.5%, 20% 96.5%, 20% 95.5%, 20% 94%, 20% 89%, 20% 84%, 20% 81%, 20% 76%, 20% 71%, 20% 65%, 20% 61%, 20% 58%, 20% 60%, 22% 57%, 45% 53%, 45% 52%, 45% 51%, 45% 48%, 45% 46%, 39% 44%, 30% 44%, 18% 42%, 17% 40%, 17% 37%, 17% 35%, 17% 31%, 16% 26%, 16% 21%, 16% 16%, 16% 12%, 16% 9%);
+      background-color: #FFFFFF;
+      position: absolute !important;
+      width: 100%;
+      height: 100%;
+      top: -50px;
+      left: -5%;
+      transform: scale(0.8) !important;
+      opacity: 0;
+      animation: ParticleFade 0.2s linear forwards;
+      animation-delay: 1.5s;
+
+      .dashed {
+        height: 900px !important;
+        width: 700px !important;
+        position: absolute !important;
+        top: -200px !important;
+        left: -30px !important;
+      }
+    }
+
+
+  }
+
+  @keyframes sandClockAnimation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(.8);
+    }
+  }
+
+  @keyframes sandClockRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-11deg);
+    }
+  }
+}
+
+

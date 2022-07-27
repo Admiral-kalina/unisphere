@@ -1,12 +1,13 @@
 import React from 'react';
 import * as styles from "./styles.module.scss"
 import SliderMoreBtn from "../../UI/SliderMoreBtn";
+import TimeAnimations from "../../../animations/STimeAnimation/TimeAnimations";
 
 const STime = () => {
     return (
         <section className={styles.timeSlide_row}>
             <div className={styles.timeSlide_animation}>
-
+                <TimeAnimations />
             </div>
             <div className={styles.timeSlide_information}>
                 <p className='slider_title'>TIME</p>
