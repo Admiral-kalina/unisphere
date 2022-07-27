@@ -36,22 +36,4 @@ export const Events = [{
     eventDate: '04 / 05 / 23',
     eventTitle: 'The world without limits. I\'ts Unisphere.',
     id: '16'
-}, {
-    eventImg: 'https://work-api.space/wp-content/uploads/2022/07/ff1-e1658163791878.jpg',
-    eventPlace: '950 Fulton St, Brooklyn, NY 11238, USA',
-    eventDate: '04 / 05 / 23',
-    eventTitle: 'The world without limits. I\'ts Unisphere.',
-    id: '16'
-}, {
-    eventImg: 'https://work-api.space/wp-content/uploads/2022/07/ff1-e1658163791878.jpg',
-    eventPlace: '950 Fulton St, Brooklyn, NY 11238, USA',
-    eventDate: '04 / 05 / 23',
-    eventTitle: 'The world without limits. I\'ts Unisphere.',
-    id: '16'
-}, {
-    eventImg: 'https://work-api.space/wp-content/uploads/2022/07/ff1-e1658163791878.jpg',
-    eventPlace: '950 Fulton St, Brooklyn, NY 11238, USA',
-    eventDate: '04 / 05 / 23',
-    eventTitle: 'The world without limits. I\'ts Unisphere.',
-    id: '16'
 }]
