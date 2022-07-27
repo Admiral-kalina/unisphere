@@ -1,165 +1,165 @@
-@import '../../styles/variables.scss';
-
-.event_page_container {
-  max-width: 940px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-
-  .event_item_place_container {
-    display: flex;
-    align-items: center;
-    background-color: $light-gray;
-    padding: 10px;
-    font-size: 14px;
-    color: $gray;
-
-    svg {
-      margin-right: 5px;
-    }
-  }
-
-  .event_item_place_container {
-    margin-bottom: 50px;
-  }
-
-  .event_item_place {
-    margin: 0;
-    color: $mid-gray;
-
-  }
-
-  .event_page_main_text_container {
-    max-width: 740px;
-    color: $blue-gray;
-    font-size: 18px;
-  }
-
-  .event_page_title {
-    font-size: 48px;
-    text-transform: uppercase;
-    max-width: 740px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 auto 50px auto;
-  }
-
-  .event_page_date {
-    font-family: Jura;
-    font-size: 20px;
-    color: $mid-gray;
-    margin-bottom: 70px;
-  }
-
-  .event_page_img {
-    width: 100%;
-    margin-bottom: 60px;
-  }
-
-  .event_page_short_description {
-    font-size: 18px;
-    margin-bottom: 100px;
-  }
-  h4 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  h3 {
-    color: $dark-blue;
-    font-size: 46px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .event_page_text_block {
-    margin-bottom: 100px;
-  }
-
-  .event_page_text_block_title {
-
-  }
-
-  .event_page_text_block_paragraph {
-
-  }
-
-  .event_page_text_quote_block {
-    margin-bottom: 100px;
-  }
-
-  .event_page_text_block_quote_paragraph {
-
-  }
-
-  .event_page_text_block_quote {
-    width: 30%;
-    display:inline-block;
-    height: 30px;
-    float: left;
-
-
-  }
-  .quote_text_block {
-    display: flex;
-    align-items: center;
-
-    .quote {
-      width: 45%;
-      vertical-align: center;
-      transform: translateX(-20%);
-      font-size: 20px;
-      color: $blue;
-      text-transform: uppercase;
-    }
-    p {
-      width: 60%;
-    }
-  }
-  .text_photo_block {
-
-    .img_right_block {
-      display: flex;
-      margin-bottom: 40px;
-      img {
-        width: 50%;
-        transform: translateX(20%);
-      }
-    }
-    .img_text_block {
-
-    }
-    .img_left_block {
-      display: flex;
-      margin-bottom: 40px;
-      img {
-        width: 50%;
-        transform: translateX(-20%);
-      }
-    }
-    .full_width_img {
-      transform: translateX(-10%);
-      margin-bottom: 40px;
-    }
-  }
-  .lists {
-    ul {
-      list-style: none;
-    }
-    ul li::before {
-      content: "\2022";
-      color: $blue; /* Change the color */
-      font-weight: bold; /* If you want it to be bold */
-      display: inline-block; /* Needed to add space between the bullet and the text */
-      width: 20px; /* Also needed for space (tweak if needed) */
-      margin-left: -1em; /* Also needed for space (tweak if needed) */
-    }
-    li {
-      margin-bottom: 20px;
-    }
-  }
-
-}
+//@import '../../styles/variables.scss';
+//
+//.event_page_container {
+//  max-width: 940px;
+//  margin: 0 auto;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  align-items: center;
+//  padding-top: 100px;
+//
+//  .event_item_place_container {
+//    display: flex;
+//    align-items: center;
+//    background-color: $light-gray;
+//    padding: 10px;
+//    font-size: 14px;
+//    color: $gray;
+//
+//    svg {
+//      margin-right: 5px;
+//    }
+//  }
+//
+//  .event_item_place_container {
+//    margin-bottom: 50px;
+//  }
+//
+//  .event_item_place {
+//    margin: 0;
+//    color: $mid-gray;
+//
+//  }
+//
+//  .event_page_main_text_container {
+//    max-width: 740px;
+//    color: $blue-gray;
+//    font-size: 18px;
+//  }
+//
+//  .event_page_title {
+//    font-size: 48px;
+//    text-transform: uppercase;
+//    max-width: 740px;
+//    font-weight: bold;
+//    text-align: center;
+//    margin: 0 auto 50px auto;
+//  }
+//
+//  .event_page_date {
+//    font-family: Jura;
+//    font-size: 20px;
+//    color: $mid-gray;
+//    margin-bottom: 70px;
+//  }
+//
+//  .event_page_img {
+//    width: 100%;
+//    margin-bottom: 60px;
+//  }
+//
+//  .event_page_short_description {
+//    font-size: 18px;
+//    margin-bottom: 100px;
+//  }
+//  h4 {
+//    text-transform: uppercase;
+//    font-weight: bold;
+//    font-size: 30px;
+//  }
+//  h3 {
+//    color: $dark-blue;
+//    font-size: 46px;
+//    font-weight: bold;
+//    text-transform: uppercase;
+//  }
+//
+//  .event_page_text_block {
+//    margin-bottom: 100px;
+//  }
+//
+//  .event_page_text_block_title {
+//
+//  }
+//
+//  .event_page_text_block_paragraph {
+//
+//  }
+//
+//  .event_page_text_quote_block {
+//    margin-bottom: 100px;
+//  }
+//
+//  .event_page_text_block_quote_paragraph {
+//
+//  }
+//
+//  .event_page_text_block_quote {
+//    width: 30%;
+//    display:inline-block;
+//    height: 30px;
+//    float: left;
+//
+//
+//  }
+//  .quote_text_block {
+//    display: flex;
+//    align-items: center;
+//
+//    .quote {
+//      width: 45%;
+//      vertical-align: center;
+//      transform: translateX(-20%);
+//      font-size: 20px;
+//      color: $blue;
+//      text-transform: uppercase;
+//    }
+//    p {
+//      width: 60%;
+//    }
+//  }
+//  .text_photo_block {
+//
+//    .img_right_block {
+//      display: flex;
+//      margin-bottom: 40px;
+//      img {
+//        width: 50%;
+//        transform: translateX(20%);
+//      }
+//    }
+//    .img_text_block {
+//
+//    }
+//    .img_left_block {
+//      display: flex;
+//      margin-bottom: 40px;
+//      img {
+//        width: 50%;
+//        transform: translateX(-20%);
+//      }
+//    }
+//    .full_width_img {
+//      transform: translateX(-10%);
+//      margin-bottom: 40px;
+//    }
+//  }
+//  .lists {
+//    ul {
+//      list-style: none;
+//    }
+//    ul li::before {
+//      content: "\2022";
+//      color: $blue; /* Change the color */
+//      font-weight: bold; /* If you want it to be bold */
+//      display: inline-block; /* Needed to add space between the bullet and the text */
+//      width: 20px; /* Also needed for space (tweak if needed) */
+//      margin-left: -1em; /* Also needed for space (tweak if needed) */
+//    }
+//    li {
+//      margin-bottom: 20px;
+//    }
+//  }
+//
+//}
