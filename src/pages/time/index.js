@@ -61,24 +61,24 @@ const Time = () => {
                            <div className={styles.app_info}>
                                <h2>New Layer app</h2>
                                <p>Unisphere browser. Your ticket to the world of augmented reality. New Layer opens this world for everyone.</p>
-                               <div className={styles.app_info__buttons}>
-                                   <AppleBtn/>
-                                   <GoogleBtn/>
-                               </div>
                            </div>
                            <div className={styles.app_phone}>
                                <Phone/>
                                <span></span>
                            </div>
+                           <div className={styles.app_buttons}>
+                               <AppleBtn/>
+                               <GoogleBtn/>
+                           </div>
                        </div>
                    </section>
-                   {/*<section className={styles.howUse}>*/}
-                   {/*    <h2  className={styles.howUse_title}>How to use?</h2>*/}
-                   {/*    <p className={styles.howUse_subtitle}>There are many abilities of using the Unisphere via New Layer app. Find a guide below. </p>*/}
-                   {/*    <div className={styles.howUse_accordion_block}>*/}
-                   {/*        <Accordion/>*/}
-                   {/*    </div>*/}
-                   {/*</section>*/}
+                   <section className={styles.howUse}>
+                       <h2  className={styles.howUse_title}>How to use?</h2>
+                       <p className={styles.howUse_subtitle}>There are many abilities of using the Unisphere via New Layer app. Find a guide below. </p>
+                       <div className={styles.howUse_accordion_block}>
+                           <Accordion/>
+                       </div>
+                   </section>
                </div>
             <Footer/>
             </div>
