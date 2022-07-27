@@ -89,3 +89,10 @@
     width: calc(251px * 0.7);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .qube_container {
+    height: calc(290px * 0.5);
+    width: calc(251px * 0.5);
+  }
+}

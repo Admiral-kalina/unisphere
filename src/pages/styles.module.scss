@@ -194,12 +194,27 @@ html, body {
 
   }
   .preview{
+    height: 890px;
     margin: 0 18px;
-  }
-
-  .preview__informations {
-    justify-self: center;
-    text-align: center;
+    .preview__informations {
+      margin: 0;
+      justify-self: center;
+      text-align: center;
+    }
+    .preview__scroll {
+      h5 {
+        display: none;
+      }
+      span{
+        position: absolute;
+        display: block;
+        top: -10px;
+        height: 24px;
+      }
+      .arrow {
+        top: 40px;
+      }
+    }
   }
 }
 

@@ -53,77 +53,9 @@
   }
 }
 
-@media screen and (max-width: 1380px) {
-  .metaverse__row {
-    grid-column-gap: 125px;
-    p {
-      margin-top: 25px;
-      position: relative;
-      width: 380px;
-      font-size: 16px;
-      line-height: 32px;
-      text-align: center;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .metaverse__row {
-    grid-column-gap: 55px;
-    p {
-      margin-top: 25px;
-      position: relative;
-      width: 320px;
-      font-size: 16px;
-      line-height: 32px;
-      text-align: center;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-
-  .metaverse__row {
-    grid-template-areas:
-  "header "
-  "vase"
-  "space"
-  ;
-    grid-template-columns: 1fr ;
-    grid-column-gap: 55px;
-    p {
-      margin-top: 25px;
-      position: relative;
-      width: 320px;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-
-  .metaverse__row {
-    grid-template-areas:
-  "header "
-  "vase"
-  "space"
-  ;
-    grid-template-columns: 1fr ;
-    grid-column-gap: 55px;
-    p {
-      margin-top: 25px;
-      position: relative;
-      width: 320px;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
-    }
-  }
-}
 
 .app{
-  margin-top: 220px;
+  margin: 220px 18px 0;
   position: relative;
   z-index: 1;
 }
@@ -172,17 +104,9 @@
       position: relative;
       z-index: 10;
       text-align: center;
-      max-width: 680px;
+      width: 680px;
       font-size: 18px;
       line-height: 36px;
-      @media screen and (max-width: 1440.1px) {
-
-        .app_subtitle{
-          display: none;
-        }
-
-      }
-
     }
   }
   .app_info{
@@ -208,38 +132,16 @@
     }
 
 
-    .appleBtn{
-      width: 222px;
-      height: 72px;
-      margin-right: 18px;
-      span{
-        width: 208px;
-        height: 49px;
-        display: inline-block;
-        background-image: url("../../images/Time/appleBtn.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-    }
-    .googleBtn{
-      width: 243px;
-      height: 72px;
-      span{
-        width: 208px;
-        height: 49px;
-        display: inline-block;
-        background-image: url("../../images/Time/googleBtn.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-    }
+
+  }
+  .app_info__buttons{
+    display: flex;
   }
   .app_phone{
     margin-left: 118px;
     position: relative;
     grid-area: phone;
-    width: 309px;
-    height: 640px;
+
     span{
       position: absolute;
       content: '';
@@ -274,6 +176,278 @@
   }
   .howUse_accordion_block{
     margin-top: 70px;
+  }
+}
+
+
+@media screen and (max-width: 1380px) {
+  .app_row {
+    .app_info {
+      margin-right: 25px;
+      grid-area: info;
+      max-width: 440px;
+
+      h2 {
+        font-size: 42px;
+        line-height: 54px;
+      }
+
+      p {
+
+        max-width: 440px;
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+  }
+    .metaverse__row {
+      grid-column-gap: 125px;
+
+      p {
+        margin-top: 25px;
+        width: 380px;
+        font-size: 16px;
+        line-height: 32px;
+      }
+
+      h2 {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 56px;
+      }
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+  .app{
+    margin-top: 150px;
+    position: relative;
+    z-index: 1;
+  }
+  .app_row{
+    .app_header {
+      margin-bottom: 240px;
+      position: relative;
+      grid-area: header;
+      justify-self: center;
+
+      .bgLine {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -190px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 942px;
+        height: 893px;
+        background-image: url("../../images/Time/bgLine.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .app_title {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        font-family: 'Jura', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 3px;
+      }
+
+      .app_subtitle {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        max-width: 680px;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+  .metaverse__row {
+    grid-column-gap: 55px;
+    p {
+      margin-top: 25px;
+      position: relative;
+      width: 320px;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+    }
+    h2{
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .app{
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+  }
+  .app_row{
+    .app_header {
+      width: 400px;
+      margin: 0 auto  240px;
+      position: relative;
+      grid-area: header;
+      justify-self: center;
+      .bgLine {
+        display: none;
+      }
+
+      .app_title {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        font-family: 'Jura', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 3px;
+      }
+
+      .app_subtitle {
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        line-height: 32px;
+        &::after{
+          z-index: 0;
+          content: '';
+          position: absolute;
+          display: block;
+          bottom: -190px;
+
+          transform: translateX(-50%);
+          width: 942px;
+          height: 693px;
+          background-image: url("../../images/Time/bgLineSmall.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .app_info{
+      margin-right: 55px;
+      grid-area: info;
+      justify-self: end;
+      align-self: center;
+      text-align: center;
+      max-width: 340px;
+      h2{
+        font-family: 'Jura', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 3px;
+      }
+      p{
+        text-align: center;
+        max-width: 540px;
+        font-size: 18px;
+        line-height: 36px;
+      }
+
+
+      .appleBtn{
+        width: 222px;
+        height: 72px;
+        margin-right: 18px;
+        span{
+          width: 208px;
+          height: 49px;
+          display: inline-block;
+          background-image: url("../../images/Time/appleBtn.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      .googleBtn{
+        width: 243px;
+        height: 72px;
+        span{
+          width: 208px;
+          height: 49px;
+          display: inline-block;
+          background-image: url("../../images/Time/googleBtn.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .app_phone{
+      margin-left: 118px;
+      position: relative;
+      grid-area: phone;
+      width: 109px;
+      height: 640px;
+      span{
+        position: absolute;
+        content: '';
+        display: block;
+        bottom: 80px;
+        left: -70px;
+        width: 180px;
+        height: 180px;
+        background-image: url("../../images/Time/n.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .metaverse__row {
+    grid-template-areas:
+  "header "
+  "vase"
+  "space"
+  ;
+    grid-template-columns: 1fr ;
+    grid-column-gap: 55px;
+    p {
+      margin-top: 25px;
+      position: relative;
+      width: 320px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+    h2{
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .metaverse__row {
+    p {
+      width: 280px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    h2{
+      font-size: 24px;
+      line-height: 33px;
+    }
   }
 }
 
