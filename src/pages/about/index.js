@@ -148,16 +148,6 @@ const About = () => {
             </section>
             <Footer/>
         </div>
-        // <div>
-        //     <div className={styles.page}></div>
-        //     <AboutHeader/>
-        //
-        //
-        //
-        //
-        //
-        //
-        // </div>
     )
 }
 export default About
