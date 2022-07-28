@@ -110,18 +110,49 @@
     }
     .ourValues_row{
       display: grid;
-      width: 1033px;
+      max-width: 100%;
       margin: 85px auto 120px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "health head"
+      "earth move"
+      "sociable security"
+      "lamp humanity "
+    ;
       justify-self: center;
       align-self: center;
       grid-column-gap: 66px;
       grid-row-gap: 30px;
     }
+    #ourValues_grid__health{
+      grid-area: health;
+    }
+    #ourValues_grid__head{
+      grid-area: head;
+    }
+    #ourValues_grid__earth{
+      grid-area: earth;
+    }
+    #ourValues_grid__move{
+      grid-area: move;
+    }
+    #ourValues_grid__sociable{
+      grid-area: sociable;
+    }
+    #ourValues_grid__security{
+      grid-area: security;
+    }
+    #ourValues_grid__lamp{
+      grid-area: lamp;
+    }
+    #ourValues_grid__humanity{
+      grid-area: humanity;
+    }
+
+
+
     .ourValues_column{
       display: flex;
       .ourValues_column__text{
-
         :first-child{
           width: 100%;
           text-transform: uppercase;
@@ -244,6 +275,36 @@
       font-size: 16px;
       line-height: 32px;
       font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ourInformation_row {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-areas:
+  "philosophyAnimation"
+  "philosophy "
+  "missionAnimation"
+  "mission"
+  "metahumansAnimation"
+  "metahumans";
+  }
+  .ourValues {
+    .ourValues_block {
+      .ourValues_row {
+        display: grid;
+        max-width: 100%;
+        margin: 85px auto 120px;
+        grid-template-areas:
+      "health"
+      "earth move"
+      "sociable security"
+      "lamp humanity ";
+      }
     }
   }
 }

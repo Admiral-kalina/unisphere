@@ -80,14 +80,14 @@ const About = () => {
                         </div>
                         <h3 className={styles.ourValues_title}>Our values are:</h3>
                         <div className={styles.ourValues_row}>
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__health} className={styles.ourValues_column}>
                                 <img src={health} alt="health"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>Human health </p>
                                     <p>Our space is free from factors that negatively affect human health.</p>
                                 </div>
                             </div>
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__head} className={styles.ourValues_column}>
                                 <img src={head} alt="head"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>People's comfort </p>
@@ -95,42 +95,42 @@ const About = () => {
                                 </div>
                             </div>
 
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__earth} className={styles.ourValues_column}>
                                 <img src={earth} alt="earth"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>Environmental friendliness</p>
                                     <p>We create and develop a space free from harmful industries. It uses only virtual objects that do not need material resources to be created.</p>
                                 </div>
                             </div>
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__move} className={styles.ourValues_column}>
                                 <img src={move} alt="move"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>Human nature </p>
                                     <p>A person can build a balance between mind and body in Unisphere. He does not need to give up physical activity in favor of technology.</p>
                                 </div>
                             </div>
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__sociable} className={styles.ourValues_column}>
                                 <img src={sociable} alt="sociable"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>Social connections</p>
                                     <p>The Unisphere space is saturated with full-fledged physical contacts between people, simplified with augmented reality.</p>
                                 </div>
                             </div>
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__security} className={styles.ourValues_column}>
                                 <img src={security} alt="security"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>Security and privacy</p>
                                     <p>We value freedom, so we do not collect or store users' personal data.</p>
                                 </div>
                             </div>
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__lamp} className={styles.ourValues_column}>
                                 <img src={lamp} alt="lamp"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>Auspicious future </p>
                                     <p>We are creating a space that contribute the development of technologies useful for humanity.</p>
                                 </div>
                             </div>
-                            <div className={styles.ourValues_column}>
+                            <div id={styles.ourValues_grid__humanity} className={styles.ourValues_column}>
                                 <img src={humanity} alt="humanity"/>
                                 <div className={styles.ourValues_column__text}>
                                     <p>Development of humanity</p>

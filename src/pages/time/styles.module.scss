@@ -333,6 +333,7 @@
       margin: 0 auto  240px;
 
       justify-self: center;
+      align-self: center;
       .bgLine {
         display: none;
       }
@@ -362,12 +363,12 @@
           content: '';
           position: absolute;
           display: block;
-          bottom: -190px;
-          transform: translateX(-50%);
-          width: 942px;
-          height: 693px;
+          bottom: -80px;
+          transform: translateX(-10%);
+          width: 120%;
+          height: 503px;
           background-image: url("../../images/Time/bgLineSmall.png");
-          background-size: contain;
+          background-size: cover;
           background-repeat: no-repeat;
         }
       }
