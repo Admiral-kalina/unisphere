@@ -115,3 +115,10 @@
     width: calc(420px * 0.7);
   }
 }
+
+@media screen and (max-width: 425px) {
+  .birds_container {
+    height: calc(385px * 0.6);
+    width: calc(420px * 0.6);
+  }
+}

@@ -12,8 +12,6 @@
     top: 48px;
     right: 35px;
     //border: 1px dashed $blue;
-
-
     background-image: linear-gradient($blue 33%, rgba(255,255,255,0) 0%);
     background-position: right;
     background-size: 3px 6px;
@@ -26,7 +24,6 @@
   z-index: 1;
   height: 48px;
   width: 48px;
-
   right: 0;
   svg{
     display: none;
@@ -43,15 +40,40 @@
   svg{
   display: none;
   }
-
 }
 
+
 .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
-  width: 940px;
+  font-size: 18px;
+  line-height: 36px;
+  width: 82.4%;
   position: relative;
 }
 
 .ant-collapse-header-text{
   font-size: 36px;
   line-height: 42px;
+  width: 72.4%;
+}
+
+@media screen and (max-width: 1024px) {
+  .ant-collapse-header-text{
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ant-collapse-header-text{
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }

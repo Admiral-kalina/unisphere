@@ -9,6 +9,8 @@ import ItemMapMark from "../../assets/Events/ItemMapMark";
 const Event = ({id}) => {
     const event = getEvent(Events, id)
 
+    if(!event) return null
+
     return (
         <div>
             <div className={styles.event_page_container}>
