@@ -1,17 +1,17 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-
-
-import TimeCircle from "../../animations/STimeAnimation/TimeCircle";
-import ScrollSlider from "../../components/ScrollSlider/ScrollSlider";
-import SandClock from "../../animations/STimeAnimation/SandClock";
-import TimeAnimations from "../../animations/STimeAnimation/TimeAnimations";
+import './styles.scss'
+import TimeAnimationGif from "../../assets/gifAnimations/TimeAnimationGif";
+import AboutAnimationGif from "../../assets/gifAnimations/AboutAnimationGif";
 
 const ForInvestors = () => {
-    return(
+    return (
         <div>
             <div>ForInvestors</div>
-                <TimeAnimations />
+            <div className='animation_wrapper'>
+                <TimeAnimationGif/>
+                <AboutAnimationGif/>
+            </div>
             <Footer/>
         </div>
 

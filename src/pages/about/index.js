@@ -5,11 +5,9 @@ import Footer from "../../components/Footer/Footer";
 import Birds from "../../assets/animateImg/Birds/Birds";
 import Man from "../../assets/animateImg/Man/Man";
 import OurMission from "../../assets/animateImg/ourMission/OurMission";
-import ManFace from "../../assets/animateImg/Man/ManFace";
 import AboutHeader from "../../assets/animateImg/AboutHeader/AboutHeader";
 import AboutTriangle from "../../assets/animateImg/AboutTriangle";
 import AboutRhombus from "../../assets/animateImg/AboutRhombus";
-import TimeHeader from "../../assets/animateImg/TimeHeader/TimeHeader";
 import head from "../../images/About/icons/head.png";
 import earth from "../../images/About/icons/earth.png";
 import health from "../../images/About/icons/health.png";
@@ -21,6 +19,7 @@ import sociable from "../../images/About/icons/sociable.png";
 import lineBg from "../../images/About/lineBg.png"
 import AboutTicker from "../../components/AboutTicker/AboutTicker";
 import headerBg from "../../images/About/headerBg.png"
+import ReactWOW from 'react-wow'
 
 const About = () => {
     return(
@@ -148,6 +147,7 @@ const About = () => {
             </section>
             <Footer/>
         </div>
+
         // <div>
         //     <div className={styles.page}></div>
         //     <AboutHeader/>
