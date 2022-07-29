@@ -98,7 +98,7 @@
     .ourValues_triangle{
       position: absolute;
       top: 245px;
-      left: 94px;
+      left: 64px;
     }
     .ourValues_rhombus{
       position: absolute;
@@ -123,30 +123,38 @@
     #ourValues_grid__health{
       grid-area: health;
       justify-self: end;
+      width: 88%;
     }
     #ourValues_grid__head{
+      width: 88%;
       grid-area: head;
     }
     #ourValues_grid__earth{
       grid-area: earth;
       justify-self: end;
+      width: 88%;
     }
     #ourValues_grid__move{
       grid-area: move;
+      width: 88%;
     }
     #ourValues_grid__sociable{
       grid-area: sociable;
       justify-self: end;
+      width: 88%;
     }
     #ourValues_grid__security{
       grid-area: security;
+      width: 88%;
     }
     #ourValues_grid__lamp{
       grid-area: lamp;
       justify-self: end;
+      width: 88%;
     }
     #ourValues_grid__humanity{
       grid-area: humanity;
+      width: 88%;
     }
 
     .ourValues_column{
@@ -195,6 +203,65 @@
     }
   }
 }
+
+@media screen and (max-width: 1620px) {
+  .ourValues {
+    .ourValues_block {
+      .ourValues_triangle {
+        position: absolute;
+        top: 245px;
+        left: 34px;
+      }
+      .ourValues_rhombus {
+        bottom: 60px;
+        right: -70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .ourValues {
+    .ourValues_block {
+      .ourValues_triangle {
+        position: absolute;
+        top: 245px;
+        left: 14px;
+      }
+      .ourValues_rhombus {
+        bottom: 60px;
+        right: -100px;
+      }
+      .ourValues_column{
+        display: flex;
+        .ourValues_column__text{
+          :first-child{
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            font-family: 'Jura', sans-serif;
+          }
+          :last-child{
+            width: 100%;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+        img{
+          margin-top: 9px;
+          height: 72px;
+          width: 72px;
+          margin-right: 36px;
+        }
+      }
+    }
+  }
+}
+
+
 
 @media screen and (max-width: 1380px) {
   .ourInformation_row {
@@ -281,6 +348,59 @@
     position: absolute;
     height: 90%;
   }
+  .ourValues {
+    .ourValues_block {
+      .ourValues_triangle {
+        display: none;
+      }
+      .ourValues_rhombus {
+        display: none;
+      }
+      .ourValues_row{
+
+        grid-column-gap: 66px;
+        grid-row-gap: 30px;
+      }
+      #ourValues_grid__health{
+        grid-area: health;
+        justify-self: end;
+        width: 95%;
+      }
+      #ourValues_grid__head{
+        width: 95%;
+        grid-area: head;
+      }
+      #ourValues_grid__earth{
+        grid-area: earth;
+        justify-self: end;
+        width: 95%;
+      }
+      #ourValues_grid__move{
+        grid-area: move;
+        width: 95%;
+      }
+      #ourValues_grid__sociable{
+        grid-area: sociable;
+        justify-self: end;
+        width: 95%;
+      }
+      #ourValues_grid__security{
+        grid-area: security;
+        width: 95%;
+      }
+      #ourValues_grid__lamp{
+        grid-area: lamp;
+        justify-self: end;
+        width: 95%;
+      }
+      #ourValues_grid__humanity{
+        grid-area: humanity;
+        width: 95%;
+      }
+    }
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -298,6 +418,7 @@
   "metahumansAnimation"
   "metahumans";
     row-gap: 57px;
+
     .ourInformation_philosophy{
       justify-self: center;
       max-width: 90%;
@@ -328,12 +449,17 @@
     }
   }
   .ourValues {
+    .ourValues_title{
+      font-size: 36px;
+      line-height: 42px;
+    }
     .ourValues_block {
+      padding-top: 10px;
       .ourValues_row {
         display: grid;
         max-width: 100%;
         margin: 85px auto 120px;
-        row-gap: 0;
+        row-gap: 20px;
         grid-template-areas:
         "health"
         "head"
@@ -344,6 +470,42 @@
         "lamp"
         "humanity"
         ;
+        #ourValues_grid__health{
+          justify-self: start;
+        }
+        #ourValues_grid__head{
+          justify-self: start;
+        }
+        #ourValues_grid__earth{
+          justify-self: start;
+        }
+        #ourValues_grid__move{
+          gjustify-self: start;
+        }
+        #ourValues_grid__sociable{
+          justify-self: start;
+        }
+        #ourValues_grid__security{
+          justify-self: start;
+        }
+        #ourValues_grid__lamp{
+          justify-self: start;
+        }
+        #ourValues_grid__humanity{
+          justify-self: start;
+        }
+      }
+      .ourValues_column{
+        .ourValues_column__text{
+          :first-child{
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 10px;
+          }
+        }
+        img{
+          margin-right: 20px;
+        }
       }
     }
   }
@@ -361,6 +523,9 @@
       text-align: center;
       line-height: 24px;
     }
+  }
+  .personality{
+    margin: 0;
   }
 }
 

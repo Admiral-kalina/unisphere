@@ -20,7 +20,7 @@ const Time = () => {
                     <div className={parentStyles.bigContainer}>
                         <div className={parentStyles.preview__row}>
                             <div className={parentStyles.preview__animations}>
-                                <img className={parentStyles.headerBg_about } src={headerBg} alt=""/>
+                                {/*<img className={parentStyles.headerBg_time } src={headerBg} alt=""/>*/}
                                 <TimeHeader/>
                             </div>
                             <div className={parentStyles.preview__informations}>

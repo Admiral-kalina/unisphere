@@ -3,6 +3,11 @@
   position: relative;
   height: 98px;
   width: 102px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
   .polygon {
     position: absolute;
     top: 0;
@@ -11,6 +16,8 @@
     clip-path: polygon(98% 0, 1% 24%, 44% 100%);
   }
   .dashed{
+    height: auto !important;
+    width: auto !important;
     position: absolute !important;
     top: -80px !important;
     left: -30px !important;
@@ -30,7 +37,29 @@
   }
   .dashed{
     position: absolute !important;
+    width: auto !important;
+    height: auto !important;
     top: -50px !important;
     left: -50px !important;
+  }
+}
+
+@media screen and (max-width: 1624px){
+  .aboutRhombus_container{
+    transform: scale(0.7);
+  }
+  .aboutTriangle_container{
+    height: calc(98px * 0.7);
+    width: calc(102px * 0.7);
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .aboutRhombus_container{
+    transform: scale(0.3);
+  }
+  .aboutTriangle_container{
+    height: calc(98px * 0.3);
+    width: calc(102px * 0.3);
   }
 }

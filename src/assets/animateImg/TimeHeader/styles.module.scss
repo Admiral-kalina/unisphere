@@ -1,6 +1,7 @@
 .timeHeader_container{
-  height: 686px;
+  height: 100%;
   width: 100%;
+  background: no-repeat center/cover url("../../../images/Time/headerBg.png");
 
   position: relative;
   .blueBallon_block{
@@ -101,4 +102,10 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .timeHeader_container {
+    height: 343px;
+    width: 100%;
+  }
+}
 
