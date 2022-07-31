@@ -88,11 +88,38 @@
     height: calc(290px * 0.7);
     width: calc(251px * 0.7);
   }
+  .backSide_container{
+    .panel{
+      width: calc(37px * 0.7);
+      height: calc(64px * 0.7);
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .qube_container {
+    height: calc(290px * 0.6);
+    width: calc(251px * 0.6);
+  }
+  .backSide_container{
+    .panel{
+      width: calc(37px * 0.7);
+      height: calc(64px * 0.7);
+    }
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .qube_container {
     height: calc(290px * 0.5);
     width: calc(251px * 0.5);
   }
+  .backSide_container{
+    .panel{
+      width: calc(37px * 0.5);
+      height: calc(64px * 0.5);
+    }
+  }
 }
+

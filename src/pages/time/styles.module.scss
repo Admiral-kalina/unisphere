@@ -41,7 +41,6 @@
     flex-direction: column;
     align-items: center;
 
-
   }
   .animation__space{
     grid-area: space;
@@ -184,7 +183,8 @@
   .app_row {
     .app_info {
       justify-self: left;
-      width: 420px;
+      align-self: end;
+      margin-bottom: 40px ;
       h2{
         font-size: 42px;
         line-height: 54px;
@@ -197,6 +197,7 @@
     }
     .app_buttons{
       justify-self: left;
+      margin-left: -30px;
       width: 320px;
       transform: scale(0.8);
     }
@@ -321,7 +322,7 @@
   .app_row{
       display: grid;
       grid-template-areas:
-       "header "
+      "header "
       "info "
       "phone"
       "buttons"
@@ -331,23 +332,18 @@
 
     .app_header {
       margin: 0 auto  240px;
-
       justify-self: center;
       align-self: center;
+      width: 100%;
       .bgLine {
         display: none;
       }
-
       .app_title {
-        position: relative;
-        z-index: 10;
-        text-align: center;
-        font-family: 'Jura', sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
         font-size: 36px;
         line-height: 48px;
-        letter-spacing: 3px;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
       }
 
       .app_subtitle {
@@ -355,18 +351,19 @@
         position: relative;
         z-index: 10;
         text-align: center;
-        width: 100%;
+        width: 80%;
         font-size: 18px;
         line-height: 32px;
         &::after{
-          z-index: 0;
           content: '';
-          position: absolute;
           display: block;
-          bottom: -80px;
-          transform: translateX(-10%);
-          width: 120%;
-          height: 503px;
+          z-index: 0;
+          position: absolute;
+          left: 50%;
+          bottom: -251px;
+          transform: translateX(-50%);
+          width: 900px;
+          height: 653px;
           background-image: url("../../images/Time/bgLineSmall.png");
           background-size: cover;
           background-repeat: no-repeat;
@@ -392,9 +389,9 @@
     }
     .app_buttons{
       justify-self: center;
-      width: 320px;
+      width: 300px;
       margin: 0 0 0 -120px;
-      transform: scale(0.8);
+      transform: scale(0.7);
     }
     .app_phone{
       margin: 0 0 0 -70px;
@@ -414,11 +411,12 @@
   "space"
   ;
     grid-template-columns: 1fr ;
-    grid-column-gap: 55px;
+    grid-row-gap: 55px;
+    margin-bottom: 233px;
     p {
       margin-top: 25px;
       position: relative;
-      width: 320px;
+      width: 80%;
       font-size: 16px;
       line-height: 24px;
       text-align: center;
@@ -434,6 +432,17 @@
 
 @media screen and (max-width: 425px) {
   .app_row{
+    .app_header {
+      .app_subtitle {
+        margin-top: 15px;
+        &::after {
+          left: 50%;
+          bottom: -16px;
+          width: 600px;
+          height: 433px;
+        }
+      }
+    }
     .app_info{
       width: 290px;
       h2{
@@ -448,12 +457,13 @@
         text-align: center;
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 40px;
       }
     }
     .app_buttons{
       justify-self: center;
       width: 320px;
-      margin: 0 0 0 -120px;
+      margin: 0 0 0 -95px;
       transform: scale(0.6);
     }
     .app_phone{
@@ -477,5 +487,6 @@
       line-height: 33px;
     }
   }
+
 }
 
