@@ -6,19 +6,12 @@ import * as styles from "./styles.module.scss"
 
 
 const Hamburger = () => {
-    const [isActive, setIsActive] = useState(false)
 
-    const handleClick = () => {
-        setIsActive(prev => !prev)
-    }
     return (
-        <div onClick={handleClick} className={styles.hamburgerBlock}>
-            <div
-                className={`${styles.hamburger} ${isActive? styles.hamburgerActive : ''}` }>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div className={styles.hamburgerBlock}>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     );
 };
